@@ -1,4 +1,4 @@
-const ProjectList = [
+const projects = [
   {
     projectName:'Videorealm',
     projectDesc:'Videorealm is a video sharing application that allows users to upload, watch and comment on videos.',
@@ -19,4 +19,5 @@ const ProjectList = [
     projectLink:'https://loanie.pro/',
     projectTech:'Javascript, Es6, React, Redux, Node, Mongodb, Mongoose, Sengrid, Mocha, Chai, AWS S3, Mlab',
   },
-]
+];
+export default projects;
