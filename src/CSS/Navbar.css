@@ -1,0 +1,34 @@
+.navbar-container {
+  height: 5em;
+  background-color: #add8e6;
+}
+
+.navbar-margins {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 10% 0% 10%;
+}
+.navbar-items-left {
+  width: 100%;
+}
+.navbar-items-right {
+  width: 100%;
+}
+.name-button {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 50%;
+  padding: 0%;
+  font-size: 60px;
+  background-color: white;
+  cursor: pointer;
+}
+.other-button {
+  align-self: left;
+  width: 30%;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 2.5% 0% 0% 1%;
+}
+.project-link {
+  text-decoration: none;
+}

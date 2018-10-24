@@ -1,5 +1,7 @@
-import React from 'react';
-import ProjectList from '../Data/ProjectList';
+import React from "react";
+import ProjectList from "../Data/ProjectList";
+import Navbar from "./Navbar";
+import "../CSS/Projects.css";
 
 const listProjects = () => {
   console.log(ProjectList);
@@ -10,7 +12,7 @@ const listProjects = () => {
     projectArr.push(<p><b>Project Description:</b> {ProjectList[i].projectDesc}</p>)
     projectArr.push(<p><b>Project Link:</b> {ProjectList[i].projectLink}</p>)
     projectArr.push(<p><b>Project Tech Stack:</b> {ProjectList[i].projectTech}</p>)
-    projectList.push(<div>{projectArr}</div>);
+    projectList.push(<div className="projects-container">{projectArr}</div>);
   }
   console.log(projectList);
   return projectList;
@@ -19,6 +21,7 @@ const Project = () => {
   listProjects();
   return(
     <div>
+      <Navbar />
       <h1>Projects</h1>
       {listProjects()}
     </div>
