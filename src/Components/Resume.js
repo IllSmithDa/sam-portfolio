@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
-import ResumeData from '../Data/Resume';
-import '../CSS/PageLayout.css';
+import ResumeData from "../Data/Resume";
+import "../CSS/PageLayout.css";
 
 const lambdaSchool = () => {
   let experienceArr = [];
   for (let i = 0; i < ResumeData.length; i++) {
     console.log(ResumeData[i].bulletList)
-    if (ResumeData[i].title === 'Lambda School') {
+    if (ResumeData[i].title === "Lambda School") {
       for (let j = 0; j < ResumeData[i].bulletList.length; j++) {
         experienceArr.push(<p>{ResumeData[i].bulletList[j]}</p>);
       }
@@ -19,7 +19,7 @@ const allenTemple = () => {
   let experienceArr = [];
   for (let i = 0; i < ResumeData.length; i++) {
     console.log(ResumeData[i].bulletList)
-    if (ResumeData[i].title === 'Allen Temple Health and Social Services') {
+    if (ResumeData[i].title === "Allen Temple Health and Social Services") {
       for (let j = 0; j < ResumeData[i].bulletList.length; j++) {
         experienceArr.push(<p>{ResumeData[i].bulletList[j]}</p>);
       }
@@ -32,7 +32,7 @@ const selfStudy = () => {
   let experienceArr = [];
   for (let i = 0; i < ResumeData.length; i++) {
     console.log(ResumeData[i].bulletList)
-    if (ResumeData[i].title === 'Code Self Study') {
+    if (ResumeData[i].title === "Code Self Study") {
       for (let j = 0; j < ResumeData[i].bulletList.length; j++) {
         experienceArr.push(<p>{ResumeData[i].bulletList[j]}</p>);
       }
@@ -45,7 +45,7 @@ const getEducation = () => {
   let educationArr = [];
   for (let i = 0; i < ResumeData.length; i++) {
     console.log(ResumeData[i].bulletList)
-    if (ResumeData[i].type === 'education') {
+    if (ResumeData[i].type === "education") {
       for (let j = 0; j < ResumeData[i].bulletList.length; j++) {
         educationArr.push(<p>{ResumeData[i].bulletList[j]}</p>);
       }
@@ -58,7 +58,7 @@ const getSKills = () => {
   let educationArr = [];
   for (let i = 0; i < ResumeData.length; i++) {
     console.log(ResumeData[i].bulletList)
-    if (ResumeData[i].type === 'skills') {
+    if (ResumeData[i].type === "skills") {
       for (let j = 0; j < ResumeData[i].bulletList.length; j++) {
         educationArr.push(<p>{ResumeData[i].bulletList[j]}</p>);
       }
@@ -71,7 +71,7 @@ const Resume = () =>{
   return(
     <div>
       <Navbar />
-      <div className='page-container'>
+      <div className="page-container">
         <h1>Resume</h1>
         <div>
           <h1>Experience</h1>

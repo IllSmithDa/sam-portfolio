@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from './Navbar';
-import '../CSS/PageLayout.css';
+import Navbar from "./Navbar";
+import "../CSS/PageLayout.css";
 const Contact = () => {
   return(
     <div>

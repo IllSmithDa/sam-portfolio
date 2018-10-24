@@ -2,6 +2,7 @@ import React from "react";
 import ProjectList from "../Data/ProjectList";
 import Navbar from "./Navbar";
 import "../CSS/Projects.css";
+import "../CSS/PageLayout.css";
 
 const listProjects = () => {
   console.log(ProjectList);
@@ -22,8 +23,10 @@ const Project = () => {
   return(
     <div>
       <Navbar />
-      <h1>Projects</h1>
-      {listProjects()}
+      <div className="page-container">
+        <h1>Projects</h1>
+        {listProjects()}
+      </div>
     </div>
   )
 }

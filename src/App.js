@@ -6,8 +6,7 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Project from "./Components/Projects";
-import Errorpage from "./Components/Projects";
-import "./App.css";
+import Errorpage from "./Components/Errorpage";
 
 class App extends Component {
   componentDidMount() {
