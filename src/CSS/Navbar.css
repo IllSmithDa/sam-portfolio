@@ -6,29 +6,79 @@
 .navbar-margins {
   display: flex;
   justify-content: space-between;
-  margin: 0% 10% 0% 10%;
+  margin: 0% 20% 0% 20%;
 }
+.navbar-postion {
+  width: 30%;
+}
+.navbar-items {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar {
+  height: 100%;
+  width: 75px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+}
+
 .navbar-items-left {
   width: 100%;
 }
 .navbar-items-right {
   width: 100%;
 }
+.open-button {
+  width: 100%;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+}
+.close-button {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  display: none;
+}
+
 .name-button {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  width: 50%;
-  padding: 0%;
-  font-size: 60px;
-  background-color: white;
+  width: 90%;
+  margin-left: 74px;
+  font-size: 40px;
   cursor: pointer;
+  border: none;
+}
+.name-button:hover {
+  color:#dadada;
+}
+.other-button:hover {
+  color:#dadada;
+}
+.close-button:hover {
+  color:#dadada;
+}
+.open-button:hover {
+  color:#dadada;
 }
 .other-button {
-  align-self: left;
-  width: 30%;
+  width: 50%;
   font-size: 30px;
   cursor: pointer;
-  margin: 2.5% 0% 0% 1%;
+  margin: 5px 0% 0% 75px;
+  border: none;
 }
 .project-link {
   text-decoration: none;
+}
+.header-item {
+  text-align: center;
 }

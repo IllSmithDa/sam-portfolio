@@ -13,6 +13,7 @@ const listProjects = () => {
     projectArr.push(<p><b>Project Description:</b> {ProjectList[i].projectDesc}</p>)
     projectArr.push(<p><b>Project Link:</b> {ProjectList[i].projectLink}</p>)
     projectArr.push(<p><b>Project Tech Stack:</b> {ProjectList[i].projectTech}</p>)
+    projectArr.push(<img src={ProjectList[i].imageSrc} alt="project-src" className="image-item"/>)
     projectList.push(<div className="projects-container">{projectArr}</div>);
   }
   console.log(projectList);
