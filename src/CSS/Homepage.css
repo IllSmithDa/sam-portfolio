@@ -1,3 +1,6 @@
+.app-container {
+  overflow: hidden;
+}
 .image-container {
   position: relative;
   text-align: center;
