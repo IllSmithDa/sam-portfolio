@@ -7,6 +7,10 @@ class Navbar extends Component {
     window.location = "/";
     this.closeNav();
   }
+  aboutLink = () => {
+    window.location = "/#aboutID";
+    this.closeNav();
+  }
   resumeLink = () => {
     window.location = "/#resumeID";
     this.closeNav();
@@ -29,6 +33,7 @@ class Navbar extends Component {
     document.getElementById("toggleButton").style.display = "block";
     document.getElementById("closedToggle").style.display = "none";
   }
+
   render() {
     return(
       <div className="navbar-postion">
@@ -37,6 +42,7 @@ class Navbar extends Component {
             <p id="closedToggle" className="close-button" onClick={this.closeNav}>×</p>
             <p id="name-button"onClick={this.homeLink} className="name-button bg-info">Samuel Kim</p>
             <p onClick={this.homeLink} className="other-button bg-info">Home</p>
+            <p onClick={this.aboutLink} className="other-button bg-info">What I Do</p>
             <p onClick={this.projectLink} className="other-button bg-info">Projects</p>
             <p onClick={this.resumeLink} className="other-button bg-info">Resume</p>
             <p onClick={this.contactLink} className="other-button bg-info">Contact</p>
