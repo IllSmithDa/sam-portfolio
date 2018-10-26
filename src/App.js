@@ -7,7 +7,7 @@ import Errorpage from "./Components/Errorpage";
 class App extends Component {
   componentDidMount() {
     setInterval(function() {
-      axios.get("https://ironcodeman.herokuapp.com");
+      axios.get("https://samuel404kim.herokuapp.com");
     }, 300000);
   }
   render() {

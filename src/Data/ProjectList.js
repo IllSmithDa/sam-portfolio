@@ -10,7 +10,7 @@ const projects = [
     projectName:'Ironcodeman',
     projectDesc:`Ironcodeman is a simple to use application which lists commands from various different frameworks including
     Git, Heroku, Django, and so on. It also lists different programming concepts from languages like C and Javascript`,
-    projectLink:'www.ironcodeman.com/',
+    projectLink:'http://www.ironcodeman.com/',
     projectTech:'Javascript, Es6, React',
     imageSrc: `https://i.imgur.com/smDFnkU.png`,
   },

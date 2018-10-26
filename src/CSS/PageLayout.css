@@ -2,13 +2,21 @@
   margin-left: 75px;
 }
 .page-size {
-  min-height: 110vh;
+  height: 120vh;
+}
+.my-image {
+  width: 15%;
+ margin-left: 42.5%;
+}
+.my-image2 {
+  width: 35%;
+ margin-left: 2.5%;
 }
 .red-page {
   background-color: rosybrown;
 }
-.green-page {
-  background-color: rgb(90, 133, 90);
+.white-page {
+  background-color: whitesmoke;
 }
 .section-title {
   margin-top: 1em;
@@ -18,7 +26,7 @@
 .section-container {
   display: flex;
   margin-left: 20%;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 .section-divider-left {
   width: 25%;
@@ -29,4 +37,7 @@
 }
 .section-divider-right {
   width: 25%;
+}
+.center-contact {
+  text-align: center;
 }
