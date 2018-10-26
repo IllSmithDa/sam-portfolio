@@ -69,27 +69,24 @@ const getSKills = () => {
 
 const Resume = () =>{
   return(
-    <div>
-      <Navbar />
-      <div className="page-container">
-        <h1>Resume</h1>
-        <div>
-          <h1>Experience</h1>
-          <h2>Lambda School </h2>
-            {lambdaSchool()}
-          <h2>Code Self Study</h2>
-            {selfStudy()}
-          <h2>Allen Temple Health and Social Services</h2>
-            {allenTemple()}
-        </div>
-        <div>
-          <h1>Education</h1>
-          {getEducation()}
-        </div>
-        <div>
-          <h1>Skills</h1>
-          {getSKills()}
-        </div>
+    <div id="resumeID" className="page-size">
+      <h1>Resume</h1>
+      <div>
+        <h1>Experience</h1>
+        <h2>Lambda School </h2>
+          {lambdaSchool()}
+        <h2>Code Self Study</h2>
+          {selfStudy()}
+        <h2>Allen Temple Health and Social Services</h2>
+          {allenTemple()}
+      </div>
+      <div>
+        <h1>Education</h1>
+        {getEducation()}
+      </div>
+      <div>
+        <h1>Skills</h1>
+        {getSKills()}
       </div>
     </div>
   )

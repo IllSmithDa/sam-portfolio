@@ -22,12 +22,9 @@ const listProjects = () => {
 const Project = () => {
   listProjects();
   return(
-    <div>
-      <Navbar />
-      <div className="page-container">
-        <h1>Projects</h1>
-        {listProjects()}
-      </div>
+    <div id="projectID">
+      <h1>Projects</h1>
+      {listProjects()}
     </div>
   )
 }

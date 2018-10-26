@@ -1,3 +1,6 @@
 .page-container {
-  margin: 1% 10% 0 85px;
+  margin-left: 75px;
+}
+.page-size {
+  min-height: 100vh;
 }

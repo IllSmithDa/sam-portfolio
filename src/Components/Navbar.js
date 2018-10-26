@@ -5,15 +5,19 @@ class Navbar extends Component {
 
   homeLink = () => {
     window.location = "/";
+    this.closeNav();
   }
   resumeLink = () => {
-    window.location = "/resume";
+    window.location = "/#resumeID";
+    this.closeNav();
   }
   projectLink = () => {
-    window.location = "/projects";
+    window.location = "/#projectID";
+    this.closeNav();
   }
   contactLink = () => {
-    window.location = "/contact";
+    window.location = "/#contactID";
+    this.closeNav();
   }
   openNav = () => {
     document.getElementById("mySidebar").style.width = "300px";
@@ -33,8 +37,8 @@ class Navbar extends Component {
             <p id="closedToggle" className="close-button" onClick={this.closeNav}>×</p>
             <p id="name-button"onClick={this.homeLink} className="name-button bg-info">Samuel Kim</p>
             <p onClick={this.homeLink} className="other-button bg-info">Home</p>
-            <p onClick={this.resumeLink} className="other-button bg-info">Resume</p>
             <p onClick={this.projectLink} className="other-button bg-info">Projects</p>
+            <p onClick={this.resumeLink} className="other-button bg-info">Resume</p>
             <p onClick={this.contactLink} className="other-button bg-info">Contact</p>
         </div>
       </div>
