@@ -70,7 +70,8 @@ const getSKills = () => {
 const Resume = () =>{
   return(
     <div id="resumeID" className="page-size">
-      <h1>Resume</h1>
+      <br />
+      <h1 className="section-title">Resume</h1>
       <div>
         <h1>Experience</h1>
         <h2>Lambda School </h2>

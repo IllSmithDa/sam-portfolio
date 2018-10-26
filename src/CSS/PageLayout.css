@@ -2,5 +2,31 @@
   margin-left: 75px;
 }
 .page-size {
-  min-height: 100vh;
+  min-height: 110vh;
+}
+.red-page {
+  background-color: rosybrown;
+}
+.green-page {
+  background-color: rgb(90, 133, 90);
+}
+.section-title {
+  margin-top: 1em;
+  text-align: center;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+.section-container {
+  display: flex;
+  margin-left: 20%;
+  margin-top: 7%;
+}
+.section-divider-left {
+  width: 25%;
+}
+.section-divider-center {
+  width: 25%;
+  margin: 0% 1% 0% 1%;
+}
+.section-divider-right {
+  width: 25%;
 }

@@ -14,7 +14,7 @@ const listProjects = () => {
     projectArr.push(<p><b>Project Link:</b> {ProjectList[i].projectLink}</p>)
     projectArr.push(<p><b>Project Tech Stack:</b> {ProjectList[i].projectTech}</p>)
     projectArr.push(<img src={ProjectList[i].imageSrc} alt="project-src" className="image-item"/>)
-    projectList.push(<div className="projects-container">{projectArr}</div>);
+    projectList.push(<div className="section-divider-center">{projectArr}</div>);
   }
   console.log(projectList);
   return projectList;
@@ -22,9 +22,12 @@ const listProjects = () => {
 const Project = () => {
   listProjects();
   return(
-    <div id="projectID">
-      <h1>Projects</h1>
-      {listProjects()}
+    <div id="projectID" className="page-size red-page">
+      <br />
+      <h1 className="section-title">Projects</h1>
+      <div className="section-container">
+        {listProjects()} 
+      </div>
     </div>
   )
 }

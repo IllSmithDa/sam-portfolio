@@ -4,6 +4,7 @@ import "../CSS/PageLayout.css"
 const ErrorPage = () => {
   return (
     <div>
+      <br />
       <Navbar />
       <div className="page-container">
         <h1> 404: Page does not Exist</h1>

@@ -40,7 +40,6 @@ class Navbar extends Component {
           <div id="mySidebar" className="bg-info sidebar">
             <button id="toggleButton" className="open-button bg-info" onClick={this.openNav}>☰</button>
             <p id="closedToggle" className="close-button" onClick={this.closeNav}>×</p>
-            <p id="name-button"onClick={this.homeLink} className="name-button bg-info">Samuel Kim</p>
             <p onClick={this.homeLink} className="other-button bg-info">Home</p>
             <p onClick={this.aboutLink} className="other-button bg-info">What I Do</p>
             <p onClick={this.projectLink} className="other-button bg-info">Projects</p>
