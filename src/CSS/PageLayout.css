@@ -50,7 +50,9 @@
 .center-contact {
   text-align: center;
 }
-
+.image-size {
+  width: 10%;
+}
 @media all and (max-width: 1100px) {
   .section-container {
     display: block;
@@ -78,7 +80,9 @@
   .my-image {
     width: 9em;
   }
-
+  .image-size {
+    width: 30%;
+  }
 }
 @media all and (max-width: 800px) {
   .text-size {
