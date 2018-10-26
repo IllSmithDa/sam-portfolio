@@ -41,3 +41,24 @@
 .center-contact {
   text-align: center;
 }
+
+@media all and (max-width: 800px) {
+  .section-container {
+    display: block;
+    margin-left: 0%;
+    margin-top: 8%;
+  }
+  .section-divider-left {
+    width: 100%;
+  }
+  .section-divider-center {
+    width: 100%;
+    margin: 0% 1% 0% 1%;
+  }
+  .section-divider-right {
+    width: 100%;
+  }
+  .page-size {
+    height: 300vh;
+  }
+}
