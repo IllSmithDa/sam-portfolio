@@ -25,6 +25,9 @@
 
 
 @media all and (max-width: 1100px) {
+  .text-centered {
+    top: 44%;
+  }
   .homepage-image {
     width: auto;
     height: 100vh;
