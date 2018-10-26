@@ -4,7 +4,7 @@ import "../CSS/PageLayout.css";
 class Navbar extends Component {
 
   homeLink = () => {
-    window.location = "/";
+    window.location = "/#app-title";
     this.closeNav();
   }
   aboutLink = () => {

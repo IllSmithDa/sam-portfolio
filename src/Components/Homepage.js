@@ -8,7 +8,7 @@ import "../CSS/PageLayout.css";
 import '../CSS/Homepage.css';
 const Homepage = () => {
   return(
-    <div className="app-container">
+    <div id="app-title" className="app-container">
       <Navbar />
       <div className="page-container">
         <div className="image-container">
