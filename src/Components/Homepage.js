@@ -14,11 +14,8 @@ const Homepage = () => {
         <div className="image-container">
           <img className="homepage-image" src="https://i.imgur.com/MpL6SRw.jpg" alt="homepage"></img>
           <div className="text-centered">
-              <h1> Samuel Kim</h1>
-              <p>Web developer and software engineer at your service. 
-                Building things is my passion and helping others build 
-                amazing things is my game.
-              </p>
+              <h1 className="header-title"> Samuel Kim</h1>
+              <h4 className="header-subtitle">Full stack web developer at your service </h4>
           </div>
         </div>
         <About />

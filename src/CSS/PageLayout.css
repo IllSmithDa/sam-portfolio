@@ -2,11 +2,20 @@
   margin-left: 75px;
 }
 .page-size {
-  height: 120vh;
+  height: 100vh;
+}
+.contact-page-size {
+  height: 100vh;
+}
+.resume-page-size {
+  height: 142vh;
 }
 .my-image {
-  width: 15%;
- margin-left: 42.5%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  width: 10%;
 }
 .my-image2 {
   width: 35%;
@@ -25,8 +34,8 @@
 }
 .section-container {
   display: flex;
-  margin-left: 20%;
-  margin-top: 8%;
+  justify-content: space-between;
+  margin: 4em 15% 0% 15%;
 }
 .section-divider-left {
   width: 25%;
@@ -42,23 +51,37 @@
   text-align: center;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1100px) {
   .section-container {
     display: block;
-    margin-left: 0%;
-    margin-top: 8%;
+    margin: 8% 5% 0% 5%;
+    padding-bottom: 4em;
   }
   .section-divider-left {
     width: 100%;
+    margin-top:4em;
   }
   .section-divider-center {
     width: 100%;
-    margin: 0% 1% 0% 1%;
+    margin: 4em 1% 0% 1%;
   }
   .section-divider-right {
+    margin-top:4em;
     width: 100%;
   }
   .page-size {
-    height: 300vh;
+    height: auto;
+  }
+  .resume-page-size {
+    height: 100vh;
+  }
+  .my-image {
+    width: 9em;
+  }
+
+}
+@media all and (max-width: 800px) {
+  .text-size {
+    font-size: 12px;
   }
 }

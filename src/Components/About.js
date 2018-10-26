@@ -19,14 +19,14 @@ const About = () => {
           </div>
           <div className="section-divider-center">
             <h2>Back End</h2>
-            <p>Using Node, I create servers using asynchronous calls for a much more cohesive and faster calls to the server. I 
-              am always looking to exanding my toolset by also learning Django, and Spring MVC. 
+            <p>Using Node.js, I create servers using asynchronous calls for a much more cohesive and faster running server. I 
+              am always looking to exanding my toolset by looking into Django, and Spring MVC. 
             </p>
             <img className="about-images" src="https://i.imgur.com/EZCSrpA.jpg" alt='node-logo' />
           </div>
           <div className="section-divider-right">
             <h2>Database</h2>
-            <p>I primarly utilize Mongodb and cloud databases including MLab. I also have utilize AWS S3 for 
+            <p>I primarly utilize Mongodb for storing databases and Mongodb based cloud services such as MLab. I also have utilized AWS S3 for 
               storing images and videoes
             </p>
             <img className="about-images" src="https://i.imgur.com/iEtRuNg.png" alt='aws-logo' />
