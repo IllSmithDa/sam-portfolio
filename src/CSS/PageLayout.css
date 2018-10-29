@@ -21,6 +21,9 @@
   width: 35%;
  margin-left: 2.5%;
 }
+.sidebar-color {
+  background-color: #00adc2;
+}
 .red-page {
   background-color: rosybrown;
 }

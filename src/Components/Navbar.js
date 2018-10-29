@@ -37,14 +37,14 @@ class Navbar extends Component {
   render() {
     return(
       <div className="navbar-postion">
-          <div id="mySidebar" className="bg-info sidebar">
-            <button id="toggleButton" className="open-button bg-info" onClick={this.openNav}>☰</button>
-            <p id="closedToggle" className="close-button" onClick={this.closeNav}>×</p>
-            <p onClick={this.homeLink} className="other-button bg-info">Home</p>
-            <p onClick={this.aboutLink} className="other-button bg-info">What I Do</p>
-            <p onClick={this.projectLink} className="other-button bg-info">Projects</p>
-            <p onClick={this.resumeLink} className="other-button bg-info">Resume</p>
-            <p onClick={this.contactLink} className="other-button bg-info">Contact</p>
+          <div id="mySidebar" className="sidebar sidebar-color">
+            <button id="toggleButton" className="open-button sidebar-color" onClick={this.openNav}>☰</button>
+            <p id="closedToggle" className="close-button sidebar-color" onClick={this.closeNav}>×</p>
+            <p onClick={this.homeLink} className="other-button sidebar-color">Home</p>
+            <p onClick={this.aboutLink} className="other-button sidebar-color">What I Do</p>
+            <p onClick={this.projectLink} className="other-button sidebar-color">Projects</p>
+            <p onClick={this.resumeLink} className="other-button sidebar-color">Resume</p>
+            <p onClick={this.contactLink} className="other-button sidebar-color">Contact</p>
         </div>
       </div>
     );

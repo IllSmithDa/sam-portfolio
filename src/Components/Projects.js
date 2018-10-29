@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectList from "../Data/ProjectList";
-import Navbar from "./Navbar";
 import "../CSS/Projects.css";
 import "../CSS/PageLayout.css";
 
