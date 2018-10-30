@@ -5,7 +5,7 @@ import Homepage from "./Components/Homepage";
 import Errorpage from "./Components/Errorpage";
 
 class App extends Component {
-  componentDidMount() {
+  componentWillMount() {
     setInterval(() => {
       http.get("https://samuel404kim.herokuapp.com");
     }, 300000);
