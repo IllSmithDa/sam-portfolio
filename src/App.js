@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import axios from "axios";
 import http from "http";
 import Homepage from "./Components/Homepage";
 import Errorpage from "./Components/Errorpage";
