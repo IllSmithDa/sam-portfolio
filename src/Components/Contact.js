@@ -3,7 +3,7 @@ import "../CSS/PageLayout.css";
 const Contact = () => {
   return(
     <div id="contactID" className="contact-page-size green-page">
-      <br /><br /><br /><br /><br /><br />
+      <br /><br /><br />
       <h1 className="section-title">Contact</h1>
       <div className="center-contact">
       <br />
