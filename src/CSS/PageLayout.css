@@ -7,6 +7,9 @@
 .contact-page-size {
   height: 100vh;
 }
+.contact-margin {
+  margin-top: 20%;
+}
 .resume-page-size {
   height: 142vh;
 }
