@@ -24,12 +24,12 @@ class Navbar extends Component {
     this.closeNav();
   }
   openNav = () => {
-    document.getElementById("mySidebar").style.width = "300px";
+    document.getElementById("mySidebar").style.left = "0";
     document.getElementById("toggleButton").style.display = "none";
     document.getElementById("closedToggle").style.display = "block";
   }
   closeNav = () => {
-    document.getElementById("mySidebar").style.width = "75px";
+    document.getElementById("mySidebar").style.left = "-225px";
     document.getElementById("toggleButton").style.display = "block";
     document.getElementById("closedToggle").style.display = "none";
   }

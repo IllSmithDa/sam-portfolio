@@ -11,7 +11,7 @@ const About = () => {
         <div className = "section-container" >
           <div className="section-divider-left">
             <h2>Front End</h2>
-            <p>I develop and create easy to understand and responsive ui components using the 
+            <p>I develop and create easy to understand and responsive UI components using the 
               latest technologies and frameworks including React and Redux. 
             </p>
             <img className="about-images" src="https://i.imgur.com/1MnD1nl.png" alt='react-logo' />
@@ -19,17 +19,16 @@ const About = () => {
           </div>
           <div className="section-divider-center">
             <h2>Back End</h2>
-            <p>Using Node.js, I create servers using asynchronous calls for a much more cohesive and faster running server. I 
-              am always looking to exanding my toolset by looking into Django, and Spring MVC. 
+            <p>Using Node.js, I create servers using asynchronous calls for a much faster running server and have utilized AWS S3 for 
+              storing images and videos. I am always looking to exanding my toolset by looking into Django, and Spring MVC. 
             </p>
             <img className="about-images" src="https://i.imgur.com/EZCSrpA.jpg" alt='node-logo' />
+            <img className="about-images" src="https://i.imgur.com/iEtRuNg.png" alt='aws-logo' />
           </div>
           <div className="section-divider-right">
             <h2>Database</h2>
-            <p>I primarly utilize Mongodb for storing databases and Mongodb based cloud services such as MLab. I also have utilized AWS S3 for 
-              storing images and videoes
+            <p>I primarly utilize MongoDB for storing databases and Mongodb based cloud services such as MLab.
             </p>
-            <img className="about-images" src="https://i.imgur.com/iEtRuNg.png" alt='aws-logo' />
             <img className="about-images" src="https://i.imgur.com/CO8ns1A.png" alt='mongodb-logo' />
             <img className="about-images" src="https://i.imgur.com/ok22dmV.png" alt='mlab-logo' />
           </div>

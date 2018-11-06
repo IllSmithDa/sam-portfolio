@@ -17,14 +17,14 @@
 }
 .sidebar {
   height: 100%;
-  width: 75px;
+  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: -225px;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.2s;
 
 }
 
@@ -36,6 +36,7 @@
 }
 .open-button {
   width: 100%;
+  margin-left: 110px;
   font-size: 40px;
   cursor: pointer;
   padding: 10px 15px;
@@ -52,7 +53,7 @@
 .name-button {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 90%;
-  margin-left: 74px;
+  margin-left: 30px;
   font-size: 40px;
   cursor: pointer;
   border: none;
