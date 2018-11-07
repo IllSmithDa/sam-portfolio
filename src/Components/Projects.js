@@ -4,7 +4,6 @@ import "../CSS/Projects.css";
 import "../CSS/PageLayout.css";
 
 const listProjects = () => {
-  console.log(ProjectList);
   const projectList = [];
   for (let i = 0; i < ProjectList.length; i++) {
     const projectArr = [];
@@ -15,13 +14,12 @@ const listProjects = () => {
     projectArr.push(<a href={ProjectList[i].projectLink}><img src={ProjectList[i].imageSrc} alt="project-src" className="image-item"/></a>)
     projectList.push(<div className="section-divider-center">{projectArr}</div>);
   }
-  console.log(projectList);
   return projectList;
 }
 const Project = () => {
   listProjects();
   return(
-    <div id="projectID" className="page-size red-page">
+    <div id="projectID" className="page-size red-page project-margin">
       <br />
       <h1 className="section-title">Projects</h1>
       <div className="section-container">

@@ -43,7 +43,7 @@ class Navbar extends Component {
             <p onClick={this.homeLink} className="other-button sidebar-color">Home</p>
             <p onClick={this.aboutLink} className="other-button sidebar-color">What I Do</p>
             <p onClick={this.projectLink} className="other-button sidebar-color">Projects</p>
-            <p onClick={this.resumeLink} className="other-button sidebar-color">Resume</p>
+            <p onClick={this.resumeLink} className="other-button sidebar-color">Experience</p>
             <p onClick={this.contactLink} className="other-button sidebar-color">Contact</p>
         </div>
       </div>

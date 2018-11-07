@@ -1,8 +1,9 @@
 const resume = [
 {
   type: 'experience',
-  title:'Lambda School',
+  title:'Lambda School - Student',
   date:'Sept. 2017 to Apr. 2018',
+  location:'Onilne',
   bulletList:[
     `• 6 month Full-Time CS fundamental/Software Development program`,
     `• Completed code challenges with group reviews`,
@@ -16,8 +17,9 @@ const resume = [
 },
 {
   type: 'experience',
-  title:'Code Self Study',
+  title:'Code Self Study - Student',
   date:'June 2016 to Aug. 2017',
+  location:'Onilne',
   bulletList:[
     `• Self study in various programming languages including 11 months in C++
     and the SDL library as well as 3 months studying HTML, CSS, JQuery, and
@@ -25,7 +27,9 @@ const resume = [
 },
 {
   type: 'experience',
-  title:'Allen Temple Health and Social Services',
+  title:'Allen Temple Health and Social Services - Social Work Intern',
+  date:'Jan. 2015 to Dec. 2015',
+  location:'Oakland Ca',
   bulletList:
   [
     `  • Conducted psychosocial assessments to determine client’s needs and
