@@ -39,12 +39,12 @@ const resume = [
     `
     • Provided long term individual therapy with adults and older adult
     AIDS/HIV clients ranging from anger management, child custody, financial
-    management, and housing assistance 
+    management, and housing assistance
     `,
     `
     • Empowered clients through the means of effective listening and communication so
     thier problems are heard while also teaching clients effective problem solving skills and 
-    overcoming destructive or unproductive thoughts.
+    overcoming destructive or unproductive thoughts
     `,
   ]
 
