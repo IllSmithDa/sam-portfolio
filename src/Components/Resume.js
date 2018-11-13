@@ -5,7 +5,7 @@ import "../CSS/PageLayout.css";
 
 export default class Resume extends Component {
   downloadResume = () => {
-    window.open("https://drive.google.com/file/d/10nO07Hvjhxmkr3x4iC5_FxuQ3a7ICff7/view?ths=true");
+    window.open("https://drive.google.com/file/d/1BZZoDuWin-CGwhqM1L3jX_PoGeiBidKb/view?ths=true");
   }
   getExperience = () => {
     const finalArr = [];
