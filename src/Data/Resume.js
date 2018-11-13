@@ -3,7 +3,7 @@ const resume = [
   type: 'experience',
   title:'Lambda School - Student',
   date:'Sept. 2017 to Apr. 2018',
-  location:'Onilne',
+  location:'Online',
   bulletList:[
     `• 6 month Full-Time CS fundamental/Software Development program`,
     `• Completed code challenges with group reviews`,
@@ -11,7 +11,7 @@ const resume = [
     `• Gained experience working with clients and understanding client demands`,
     `• Studied under well established and accomplished instructors who are
        experts in their field`,
-    `• Rigorous curriculum that includes JavaScript, ES6, Databases, Algorithms,
+    `• Rigorous curriculum that included JavaScript, ES6, Databases, Algorithms,
        React, Redux, Node, Mocha, Chai, Mongodb, SQL, Python, Django and C`,
   ]
 },
@@ -19,7 +19,7 @@ const resume = [
   type: 'experience',
   title:'Code Self Study - Student',
   date:'June 2016 to Aug. 2017',
-  location:'Onilne',
+  location:'Online',
   bulletList:[
     `• Self study in various programming languages including 11 months in C++
     and the SDL library as well as 3 months studying HTML, CSS, JQuery, and
@@ -33,7 +33,7 @@ const resume = [
   bulletList:
   [
     `• Conducted psychosocial assessments to determine client’s needs and
-    utilizing progress notes to keep track of client’s assessments and progress
+    utilized progress notes to keep track of client’s assessments and progress
     during treatment
     `,
     `
