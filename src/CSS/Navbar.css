@@ -59,16 +59,16 @@
   border: none;
 }
 .name-button:hover {
-  color:#dadada;
+  text-decoration: underline 
 }
 .other-button:hover {
-  color:#dadada;
+  text-decoration: underline 
 }
 .close-button:hover {
-  color:#dadada;
+  color: rgb(95, 95, 95);
 }
 .open-button:hover {
-  color:#dadada;
+  color: rgb(95, 95, 95);
 }
 .other-button {
   width: 50%;
