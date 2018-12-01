@@ -2,7 +2,7 @@ import React from "react";
 import "../CSS/PageLayout.css";
 const Contact = () => {
   return(
-    <div id="contactID" className="contact-page-size green-page">
+    <div id="contactID" className="contact-page-size contact-page">
       <br />
       <h1 className="section-title">Contact</h1>
       <div className="center-contact">

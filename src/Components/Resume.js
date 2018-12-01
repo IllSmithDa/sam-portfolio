@@ -27,7 +27,7 @@ export default class Resume extends Component {
 
   render() {
     return(
-      <div id="resumeID" className="page-size white-page">
+      <div id="resumeID" className="page-size resume-page">
         <br />
         <h1 className="section-title">Experience</h1>
         <br />

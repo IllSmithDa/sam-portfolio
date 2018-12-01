@@ -31,8 +31,24 @@
   background-color: rosybrown;
   padding-bottom: 20em;
 }
+.about-page {
+  background-color: #ABD5E1;
+  padding-bottom: 20em;
+}
 .white-page {
   background-color: whitesmoke;
+  padding-bottom: 20em;
+}
+.project-page {
+  background-color: #E2E2E2;
+  padding-bottom: 20em;
+}
+.resume-page {
+  background-color: #A7A7A7;
+  padding-bottom: 20em;
+}
+.contact-page {
+  background-color: #FFFFFF;
   padding-bottom: 20em;
 }
 .experience-margin {

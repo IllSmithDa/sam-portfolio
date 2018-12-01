@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return(
-    <div id="aboutID" className="page-size white-page">
+    <div id="aboutID" className="page-size about-page">
       <div className="page-size">
         <br />
         <h1 className="section-title">What I Do</h1>

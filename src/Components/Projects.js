@@ -19,7 +19,7 @@ const listProjects = () => {
 const Project = () => {
   listProjects();
   return(
-    <div id="projectID" className="page-size red-page project-margin">
+    <div id="projectID" className="page-size project-page project-margin">
       <br />
       <h1 className="section-title">Projects</h1>
       <div className="section-container">
