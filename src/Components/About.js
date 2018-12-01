@@ -22,8 +22,8 @@ const About = () => {
             <p>Using Node.js, I create servers using asynchronous calls for a much faster running server and have utilized AWS S3 for 
               storing images and videos. I am always looking to exanding my toolset by looking into Django, and Spring MVC. 
             </p>
-            <img className="about-images" src="https://i.imgur.com/EZCSrpA.jpg" alt='node-logo' />
-            <img className="about-images" src="https://i.imgur.com/iEtRuNg.png" alt='aws-logo' />
+            <img className="about-images" src="https://i.imgur.com/Jff858A.png" alt='node-logo' />
+            <img className="about-images" src="https://i.imgur.com/lK2RfMs.png" alt='aws-logo' />
           </div>
           <div className="section-divider-right">
             <h2>Database</h2>
