@@ -6,9 +6,17 @@ import Errorpage from "./Components/Errorpage";
 
 class App extends Component {
   componentWillMount() {
-    setInterval(() => {
-      http.get("https://samuel404kim.herokuapp.com");
-    }, 300000);
+    window.addEventListener("resize", function(){
+      if (window.innerWidth > 800 && document.getElementById("closedToggle").style.display === "block") {
+        document.getElementById("app-title").style.marginLeft = "225px";
+      }
+      if (window.innerWidth > 800 && document.getElementById("closedToggle").style.display === "none") {
+        document.getElementById("app-title").style.marginLeft = "0px";
+      }
+      if (window.innerWidth <= 800 && document.getElementById("closedToggle").style.display === "block") {
+        document.getElementById("app-title").style.marginLeft = "0px";
+      }
+    });
   }
   render() {
     return (

@@ -27,6 +27,9 @@
   width: 35%;
  margin-left: 2.5%;
 }
+.home-button {
+  text-decoration: underline;
+}
 .red-page {
   background-color: rosybrown;
   padding-bottom: 20em;
@@ -98,6 +101,9 @@
 .image-size {
   width: 3%;
   margin: 0em 1em 0em 1em;
+}
+@media all and (min-width: 1100px) {
+
 }
 @media all and (max-width: 1100px) {
   .section-container {
