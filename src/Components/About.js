@@ -5,7 +5,7 @@ const About = () => {
     <div id="aboutID" className="page-size about-page">
       <div className="page-size">
         <br />
-        <h1 className="section-title ">What I Do</h1>
+        <h1 className="section-title">What I Do</h1>
         <br />
         <img className="my-image" alt='profile' src="https://i.imgur.com/DwUV9bu.jpg" />
         <div className = "section-container" >

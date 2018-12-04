@@ -3,12 +3,9 @@ import Navbar from "./Navbar";
 import "../CSS/PageLayout.css"
 const ErrorPage = () => {
   return (
-    <div>
-      <br />
+    <div className="page-container">
       <Navbar />
-      <div className="page-container">
-        <h1> 404: Page does not Exist</h1>
-      </div>
+        <h1 className="section-title"> 404: Page does not Exist</h1>
     </div>
   )
 }

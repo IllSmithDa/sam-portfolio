@@ -8,11 +8,16 @@ class Navbar extends Component {
       currentID: "home-tab",
     }
   }
-
+  componentDidMount() {
+    if (window.location === "/fullresume") {
+      document.getElementById("exp-tab").style.textDecoration = "underline";
+    }
+  }
   homeLink = () => {
     window.location = "/#app-title";
     const { currentID } = this.state;
     document.getElementById(currentID).style.textDecoration = "none";
+    // remove underline of the previously clicked tab
     document.getElementById("home-tab").style.textDecoration = "underline";
     this.setState({ currentID: "home-tab" });
     if (window.innerWidth < 800) {
@@ -67,12 +72,18 @@ class Navbar extends Component {
       document.getElementById("app-title").style.marginLeft = "225px";
       document.getElementById("app-title").style.transition = "0.2s";
     }
+    console.log(window.location);
+    if (window.location.pathname === "/fullresume") {
+      const { currentID } = this.state;
+      document.getElementById(currentID).style.textDecoration = "none"; 
+      document.getElementById("exp-tab").style.textDecoration = "underline";
+    }
   };
   closeNav = () => {
     document.getElementById("mySidebar").style.left = "-225px";
     document.getElementById("toggleButton").style.display = "block";
     document.getElementById("closedToggle").style.display = "none";
-    if (window.innerWidth > 800) {
+    if (window.innerWidth >= 800) {
       document.getElementById("app-title").style.marginLeft = "0px";
       document.getElementById("app-title").style.transition = "0.2s";
     }
