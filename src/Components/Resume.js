@@ -16,7 +16,7 @@ export default class Resume extends Component {
         expArr.push(<p className="set-font"><b>Date:</b> {ExperienceData[i].date}</p>);
         expArr.push(<p className="set-font"><b>Location:</b> {ExperienceData[i].location}</p>);
         for (let j = 0; j < ExperienceData[i].bulletList.length; j++) {
-          expArr.push(<p>{ExperienceData[i].bulletList[j]}</p>)
+          expArr.push(<p className="set-font">{ExperienceData[i].bulletList[j]}</p>)
         }
       }
       finalArr.push(<div className="experience-margin">{expArr}</div>);
@@ -29,7 +29,7 @@ export default class Resume extends Component {
     return(
       <div id="resumeID" className="page-size resume-page">
         <br />
-        <h1 className="section-title set-font">Experience</h1>
+        <h1 className="section-title">Experience</h1>
         <br />
         {this.getExperience()}
         <br />
