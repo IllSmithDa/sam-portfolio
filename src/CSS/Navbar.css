@@ -62,13 +62,13 @@
   text-decoration: underline;
 }
 .other-button:hover {
-  color: rgb(70, 70, 70);
+  color: rgb(74, 74, 74);
 }
 .close-button:hover {
-  color: rgb(70, 70, 70);
+  color: rgb(74, 74, 74);
 }
 .open-button:hover {
-  color: rgb(70, 70, 70);
+  color: rgb(74, 74, 74);
 }
 .other-button {
   width: 50%;
