@@ -23,7 +23,7 @@ const resume = [
   bulletList:[
     `• Self study in various programming languages including 11 months in C++
     and the SDL library as well as 3 months studying HTML, CSS, JQuery, and
-    Java.`],
+    Java`],
 },
 {
   type: 'experience',

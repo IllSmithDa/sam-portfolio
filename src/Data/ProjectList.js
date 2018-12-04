@@ -16,7 +16,7 @@ const projects = [
   },
   {
     projectName:'Loanie',
-    projectDesc:`A mortgage management application which allows customers to track their mortgage application status and facilitates an 
+    projectDesc:`Loanie is a mortgage management application which allows customers to track their mortgage application status and facilitates an 
     otherwise long and often confusing process for obtaining mortgage loans.`,
     projectLink:'https://www.loanie.pro/',
     projectTech:'Javascript, Es6, React, Redux, Node, Mongodb, Mongoose, Sengrid, Mocha, Chai, AWS S3, MLab',

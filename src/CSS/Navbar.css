@@ -76,6 +76,7 @@
   cursor: pointer;
   margin: 5px 0% 0% 75px;
   border: none;
+  font-family: 'PT Serif', 'Roboto', sans-serif;
 }
 .project-link {
   text-decoration: none;

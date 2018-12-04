@@ -7,15 +7,15 @@ const listProjects = () => {
   const projectList = [];
   for (let i = 0; i < ProjectList.length; i++) {
     const projectArr = [];
-    projectArr.push(<p><b>Project Name:</b> {ProjectList[i].projectName}</p>)
-    projectArr.push(<p><b>Project Description:</b> {ProjectList[i].projectDesc}</p>)
-    projectArr.push(<p>
-                      <b>Project Link:</b> 
+    projectArr.push(<p className="set-font"><b>Project Name:</b> {ProjectList[i].projectName}</p>)
+    projectArr.push(<p className="set-font"><b>Project Description:</b> {ProjectList[i].projectDesc}</p>)
+    projectArr.push(<p className="set-font">
+                      <b>Project Link: </b> 
                       <a href={ProjectList[i].projectLink} target="_blank" rel="noopener noreferrer">
                       {ProjectList[i].projectLink}
                       </a>
                     </p>)
-    projectArr.push(<p><b>Project Tech Stack:</b> {ProjectList[i].projectTech}</p>)
+    projectArr.push(<p className="set-font"><b>Project Tech Stack:</b> {ProjectList[i].projectTech}</p>)
     projectArr.push(<a href={ProjectList[i].projectLink} target="_blank" rel="noopener noreferrer">
                       <img src={ProjectList[i].imageSrc} alt="project-src" className="image-item"/>
                     </a>)

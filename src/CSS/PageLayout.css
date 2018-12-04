@@ -6,9 +6,14 @@
 }
 .contact-page-size {
   height: 100vh;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .contact-margin {
   margin-top: 20%;
+}
+.set-font {
+  font-family: 'Arvo', sans-serif;
 }
 .resume-page-size {
   height: 152vh;

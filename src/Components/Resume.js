@@ -12,9 +12,9 @@ export default class Resume extends Component {
     for (let i = 0; i < ExperienceData.length; i++) {
       let expArr = [];
       if (ExperienceData[i].type === "experience") {
-        expArr.push(<h3>{ExperienceData[i].title}</h3>);
-        expArr.push(<p><b>Date:</b> {ExperienceData[i].date}</p>);
-        expArr.push(<p><b>Location:</b> {ExperienceData[i].location}</p>);
+        expArr.push(<h3 className="set-font">{ExperienceData[i].title}</h3>);
+        expArr.push(<p className="set-font"><b>Date:</b> {ExperienceData[i].date}</p>);
+        expArr.push(<p className="set-font"><b>Location:</b> {ExperienceData[i].location}</p>);
         for (let j = 0; j < ExperienceData[i].bulletList.length; j++) {
           expArr.push(<p>{ExperienceData[i].bulletList[j]}</p>)
         }
@@ -29,7 +29,7 @@ export default class Resume extends Component {
     return(
       <div id="resumeID" className="page-size resume-page">
         <br />
-        <h1 className="section-title">Experience</h1>
+        <h1 className="section-title set-font">Experience</h1>
         <br />
         {this.getExperience()}
         <br />
