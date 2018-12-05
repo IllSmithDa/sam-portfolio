@@ -112,7 +112,7 @@
   width: 100%;
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1250px) {
   .section-container {
     display: block;
     margin: 8% 5% 0% 5%;
