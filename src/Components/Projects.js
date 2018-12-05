@@ -9,10 +9,10 @@ const listProjects = () => {
     const projectArr = [];
     projectArr.push(<p className="set-font"><b>Project Name:</b> {ProjectList[i].projectName}</p>)
     projectArr.push(<p className="set-font"><b>Project Description:</b> {ProjectList[i].projectDesc}</p>)
-    projectArr.push(<p>
-                      <b  className="set-font">Project Link: </b> 
+    projectArr.push(<p className="set-font">
+                      <b>Project Link: </b> 
                       <a href={ProjectList[i].projectLink} target="_blank" rel="noopener noreferrer">
-                      {ProjectList[i].projectLink}
+                      {ProjectList[i].shortLink}
                       </a>
                     </p>)
     projectArr.push(<p className="set-font"><b>Project Tech Stack:</b> {ProjectList[i].projectTech}</p>)
