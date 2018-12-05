@@ -27,7 +27,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
-  width: 10%;
+  width: 10EM;
 }
 .my-image2 {
   width: 35%;
@@ -61,8 +61,8 @@
   padding-bottom: 15.6em;
 }
 .experience-margin {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-bottom: 1%;
 }
 .resume-button {
@@ -89,7 +89,7 @@
 .section-container {
   display: flex;
   justify-content: space-between;
-  margin: 4em 15% 0% 15%;
+  margin: 4em 10% 0% 10%;
 }
 .section-divider-left {
   width: 30%;
