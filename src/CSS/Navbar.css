@@ -44,6 +44,7 @@
 }
 .close-button {
   font-size: 40px;
+  margin-left: 225px;
   cursor: pointer;
   padding: 10px 15px;
   border: none;
