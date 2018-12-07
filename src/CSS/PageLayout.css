@@ -19,9 +19,6 @@
 .resume-page-size {
   height: 152vh; }
 
-.project-margin {
-  background-color: whitesmoke; }
-
 .my-image {
   display: flex;
   margin-left: auto;
@@ -34,18 +31,10 @@
   margin-left: 2.5%; }
 
 .home-button {
-  text-decoration: underline; }
-
-.red-page {
-  background-color: rosybrown;
-  padding-bottom: 20em; }
+  text-decoration: "underline"; }
 
 .about-page {
   background-color: #ABD5E1;
-  padding-bottom: 20em; }
-
-.white-page {
-  background-color: whitesmoke;
   padding-bottom: 20em; }
 
 .project-page {

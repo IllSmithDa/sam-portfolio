@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import $ from "jquery";
 import "../CSS/Navbar.css";
 import "../CSS/PageLayout.css";
 class Navbar extends Component {
@@ -9,57 +10,48 @@ class Navbar extends Component {
     }
   }
   componentDidMount() {
-    if (window.location === "/fullresume") {
-      document.getElementById("exp-tab").style.textDecoration = "underline";
+    
+    // update underline and scroll position
+    const updateScroll = (tab) => {
+      const { currentID } = this.state;
+      // remove underline of the previously clicked tab
+      document.getElementById(currentID).style.textDecoration = "none";
+      // underline the new element
+      document.getElementById(tab).style.textDecoration = "underline";
+      this.setState({ currentID: tab });
     }
-  }
-  homeLink = () => {
-    window.location = "/#app-title";
-    const { currentID } = this.state;
-    document.getElementById(currentID).style.textDecoration = "none";
-    // remove underline of the previously clicked tab
-    document.getElementById("home-tab").style.textDecoration = "underline";
-    this.setState({ currentID: "home-tab" });
-    if (window.innerWidth < 800) {
-      this.closeNav();
+
+    // check position of the scroll
+    const checkSrollPos = (scroll_pos) => {
+      console.log(scroll_pos);
+      if(scroll_pos >= 0 && scroll_pos <= 499) {
+        updateScroll('home-tab');
+      } else if (scroll_pos >= 500 && scroll_pos <= 1400) {
+        updateScroll('about-tab');
+      } else if (scroll_pos >= 1401 && scroll_pos <= 2430) {
+        updateScroll('project-tab');
+      } else if (scroll_pos >= 2431 && scroll_pos <= 3860) {
+        updateScroll('exp-tab');
+      } else {
+        updateScroll('contact-tab');
+      }
     }
+    // check scroll position evey time user scrolls
+    window.addEventListener('scroll', () => { 
+      let last_known_scroll_position = 0;
+      last_known_scroll_position = window.scrollY;
+      checkSrollPos(last_known_scroll_position);
+    })
   }
-  aboutLink = () => {
-    window.location = "/#aboutID";
-    const { currentID } = this.state;
-    document.getElementById(currentID).style.textDecoration = "none";
-    document.getElementById("about-tab").style.textDecoration = "underline";
-    this.setState({ currentID: "about-tab" });
-    if (window.innerWidth < 800) {
-      this.closeNav();
-    }
-  }
-  resumeLink = () => {
-    window.location = "/#resumeID";
-    const { currentID } = this.state;
-    document.getElementById(currentID).style.textDecoration = "none";
-    document.getElementById("exp-tab").style.textDecoration = "underline";
-    this.setState({ currentID: "exp-tab" });
-    if (window.innerWidth < 800) {
-      this.closeNav();
-    }
-  }
-  projectLink = () => {
-    window.location = "/#projectID";
-    const { currentID } = this.state;
-    document.getElementById(currentID).style.textDecoration = "none";
-    document.getElementById("project-tab").style.textDecoration = "underline";
-    this.setState({ currentID: "project-tab" });
-    if (window.innerWidth < 800) {
-      this.closeNav();
-    }
-  }
-  contactLink = () => {
-    window.location = "/#contactID";
-    const { currentID } = this.state;
-    document.getElementById(currentID).style.textDecoration = "none";
-    document.getElementById("contact-tab").style.textDecoration = "underline";
-    this.setState({ currentID: "contact-tab" });
+
+
+
+  currentLink = (link, tab) => {
+    // scroll into the selecte element
+    document.getElementById(link).scrollIntoView({behavior: "smooth", block: "start"});
+    // update current element 
+    this.setState({ currentID: tab });
+    // close tab on mobile
     if (window.innerWidth < 800) {
       this.closeNav();
     }
@@ -71,12 +63,6 @@ class Navbar extends Component {
     if (window.innerWidth > 800) {
       document.getElementById("app-title").style.marginLeft = "225px";
       document.getElementById("app-title").style.transition = "0.2s";
-    }
-    console.log(window.location);
-    if (window.location.pathname === "/fullresume") {
-      const { currentID } = this.state;
-      document.getElementById(currentID).style.textDecoration = "none"; 
-      document.getElementById("exp-tab").style.textDecoration = "underline";
     }
   };
   closeNav = () => {
@@ -95,11 +81,11 @@ class Navbar extends Component {
           <div id="mySidebar" className="sidebar sidebar-color">
             <button id="toggleButton" className="open-button sidebar-color" onClick={this.openNav}>☰</button>
             <p id="closedToggle" className="close-button sidebar-color" onClick={this.closeNav}>×</p>
-            <p id="home-tab" onClick={this.homeLink} className="other-button sidebar-color home-button">Home</p>
-            <p id="about-tab" onClick={this.aboutLink} className="other-button sidebar-color">What I Do</p>
-            <p id="project-tab" onClick={this.projectLink} className="other-button sidebar-color">Projects</p>
-            <p id="exp-tab"onClick={this.resumeLink} className="other-button sidebar-color">Experience</p>
-            <p id="contact-tab"onClick={this.contactLink} className="other-button sidebar-color">Contact</p>
+            <p id="home-tab" onClick={()=>this.currentLink("front-image", "home-tab")} className="other-button sidebar-color home-button">Home</p>
+            <p id="about-tab" onClick={()=>this.currentLink("aboutID", "about-tab")} className="other-button sidebar-color">What I Do</p>
+            <p id="project-tab" onClick={()=>this.currentLink("projectID", "project-tab")} className="other-button sidebar-color">Projects</p>
+            <p id="exp-tab"onClick={()=>this.currentLink("resumeID", "exp-tab")} className="other-button sidebar-color">Experience</p>
+            <p id="contact-tab"onClick={()=>this.currentLink("contactID", "contact-tab")} className="other-button sidebar-color">Contact</p>
         </div>
       </div>
     );

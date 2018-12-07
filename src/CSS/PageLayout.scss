@@ -21,9 +21,7 @@ $padding: 20em;
 .resume-page-size {
   height: 152vh;
 }
-.project-margin {
-  background-color: whitesmoke;
-}
+
 .my-image {
   display: flex;
   margin-left: auto;
@@ -36,20 +34,14 @@ $padding: 20em;
  margin-left: 2.5%;
 }
 .home-button {
-  text-decoration: underline;
+  text-decoration: "underline";
 }
-.red-page {
-  background-color: rosybrown;
-  padding-bottom: $padding;
-}
+
 .about-page {
   background-color: #ABD5E1;
   padding-bottom: $padding;
 }
-.white-page {
-  background-color: whitesmoke;
-  padding-bottom: $padding;
-}
+
 .project-page {
   background-color: #E2E2E2;
   padding-bottom: $padding;

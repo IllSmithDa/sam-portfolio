@@ -29,7 +29,7 @@ export default class Resume extends Component {
     return(
       <div id="resumeID" className="page-size resume-page">
         <br />
-        <h1 className="section-title">Experience</h1>
+        <h1 className="section-title" id="exp-title">Experience</h1>
         <br />
         {this.getExperience()}
         <br />
