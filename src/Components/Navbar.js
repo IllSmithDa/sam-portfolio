@@ -10,7 +10,6 @@ class Navbar extends Component {
     }
   }
   componentDidMount() {
-    
     // update underline and scroll position
     const updateScroll = (tab) => {
       const { currentID } = this.state;
