@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import UUID from 'uuid/v1';
 import ExperienceData from '../Data/Resume';
 import "../CSS/PageLayout.css";
 
@@ -12,14 +13,14 @@ export default class Resume extends Component {
     for (let i = 0; i < ExperienceData.length; i++) {
       let expArr = [];
       if (ExperienceData[i].type === "experience") {
-        expArr.push(<h3 className="set-font">{ExperienceData[i].title}</h3>);
-        expArr.push(<p className="set-font"><b>Date:</b> {ExperienceData[i].date}</p>);
-        expArr.push(<p className="set-font"><b>Location:</b> {ExperienceData[i].location}</p>);
+        expArr.push(<h3 key={UUID()} className="set-font">{ExperienceData[i].title}</h3>);
+        expArr.push(<p key={UUID()} className="set-font"><b>Date:</b> {ExperienceData[i].date}</p>);
+        expArr.push(<p key={UUID()} className="set-font"><b>Location:</b> {ExperienceData[i].location}</p>);
         for (let j = 0; j < ExperienceData[i].bulletList.length; j++) {
-          expArr.push(<p className="set-font">{ExperienceData[i].bulletList[j]}</p>)
+          expArr.push(<p key={UUID()} className="set-font">{ExperienceData[i].bulletList[j]}</p>)
         }
       }
-      finalArr.push(<div className="experience-margin">{expArr}</div>);
+      finalArr.push(<div key={UUID()} className="experience-margin">{expArr}</div>);
     }
     
     return finalArr;

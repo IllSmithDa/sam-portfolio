@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import $ from "jquery";
 import "../CSS/Navbar.css";
 import "../CSS/PageLayout.css";
 class Navbar extends Component {
@@ -10,19 +9,28 @@ class Navbar extends Component {
     }
   }
   componentDidMount() {
+    // text decoration not supported by IE or Edge so must be disabled
+    const isEdge = !!window.StyleMedia;
+    const isIE = /*@cc_on!@*/false || !!document.documentMode;
+    if (isEdge || isIE) {
+      document.getElementById("home-tab").style.textDecoration = "none";
+    }
     // update underline and scroll position
     const updateScroll = (tab) => {
       const { currentID } = this.state;
-      // remove underline of the previously clicked tab
-      document.getElementById(currentID).style.textDecoration = "none";
-      // underline the new element
-      document.getElementById(tab).style.textDecoration = "underline";
+
+      // text decoration not supported by IE or Edge so these commands must be ignored for these browsers
+      if (!isEdge && !isIE) {
+        // remove underline of the previously clicked tab
+        document.getElementById(currentID).style.textDecoration = "none";
+        // underline the new element
+        document.getElementById(tab).style.textDecoration = "underline";
+      }
       this.setState({ currentID: tab });
     }
 
     // check position of the scroll
     const checkSrollPos = (scroll_pos) => {
-      console.log(scroll_pos);
       if(scroll_pos >= 0 && scroll_pos <= 499) {
         updateScroll('home-tab');
       } else if (scroll_pos >= 500 && scroll_pos <= 1400) {
