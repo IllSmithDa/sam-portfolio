@@ -29,12 +29,10 @@ export default class Homepage extends Component{
     window.addEventListener("resize", () => {
       checkResolution();
     })
-    console.log(window.screen.height)
     document.getElementById("front-image").style.height = `${window.outerHeight}px `;
   }
   render() {
     const { imageURL } = this.state;
-    console.log(imageURL);
     return(
       <div className="app-container">
         <Navbar />
