@@ -15,6 +15,7 @@ export default class Homepage extends Component{
     }
   }
   componentDidMount() {
+    
     const checkResolution = () => {
       if (window.innerWidth >= 1100) {
         this.setState({ imageURL: "https://i.imgur.com/5xaWoLJ.jpg" });
@@ -28,6 +29,8 @@ export default class Homepage extends Component{
     window.addEventListener("resize", () => {
       checkResolution();
     })
+    console.log(window.screen.height)
+    document.getElementById("front-image").style.height = `${window.outerHeight}px `;
   }
   render() {
     const { imageURL } = this.state;
