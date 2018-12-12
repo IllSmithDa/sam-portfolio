@@ -31,17 +31,33 @@ class Navbar extends Component {
 
     // check position of the scroll
     const checkSrollPos = (scroll_pos) => {
-      if(scroll_pos >= 0 && scroll_pos <= 499) {
-        updateScroll('home-tab');
-      } else if (scroll_pos >= 500 && scroll_pos <= 1400) {
-        updateScroll('about-tab');
-      } else if (scroll_pos >= 1401 && scroll_pos <= 2430) {
-        updateScroll('project-tab');
-      } else if (scroll_pos >= 2431 && scroll_pos <= 3860) {
-        updateScroll('exp-tab');
+      if (window.innerWidth > 1249) {
+        if(scroll_pos >= 0 && scroll_pos <= 499) {
+          updateScroll('home-tab');
+        } else if (scroll_pos >= 500 && scroll_pos <= 1400) {
+          updateScroll('about-tab');
+        } else if (scroll_pos >= 1401 && scroll_pos <= 2430) {
+          updateScroll('project-tab');
+        } else if (scroll_pos >= 2431 && scroll_pos <= 3860) {
+          updateScroll('exp-tab');
+        } else {
+          updateScroll('contact-tab');
+        }
       } else {
-        updateScroll('contact-tab');
+        console.log(scroll_pos);
+        if(scroll_pos >= 0 && scroll_pos <= 499) {
+          updateScroll('home-tab');
+        } else if (scroll_pos >= 500 && scroll_pos <= 1899) {
+          updateScroll('about-tab');
+        } else if (scroll_pos >= 1900 && scroll_pos <= 4349) {
+          updateScroll('project-tab');
+        } else if (scroll_pos >= 4350 && scroll_pos <= 5899) {
+          updateScroll('exp-tab');
+        } else {
+          updateScroll('contact-tab');
+        }
       }
+
     }
     // check scroll position evey time user scrolls
     window.addEventListener('scroll', () => { 
