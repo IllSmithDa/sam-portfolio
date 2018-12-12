@@ -44,7 +44,6 @@ class Navbar extends Component {
           updateScroll('contact-tab');
         }
       } else {
-        console.log(scroll_pos);
         if(scroll_pos >= 0 && scroll_pos <= 499) {
           updateScroll('home-tab');
         } else if (scroll_pos >= 500 && scroll_pos <= 1899) {
@@ -63,6 +62,7 @@ class Navbar extends Component {
     window.addEventListener('scroll', () => { 
       let last_known_scroll_position = 0;
       last_known_scroll_position = window.scrollY;
+      console.log(window.scrollX);
       checkSrollPos(last_known_scroll_position);
     })
   }
