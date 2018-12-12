@@ -4,12 +4,6 @@
 .page-size {
   height: auto; }
 
-.contact-page-size {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  padding-top: 15%; }
-
 .contact-margin {
   margin-top: 20%; }
 
@@ -44,7 +38,13 @@
 
 .contact-page {
   background-color: #FFFFFF;
-  padding-bottom: 20em; }
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center; }
 
 .experience-margin {
   margin-left: 10%;
