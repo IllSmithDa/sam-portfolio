@@ -19,7 +19,7 @@ export default class Homepage extends Component{
     const checkResolution = () => {
       if (window.innerWidth >= 1100) {
         this.setState({ imageURL: "https://i.imgur.com/5xaWoLJ.jpg" });
-      } else if (window.innerWidth < 1100 && window.innerWidth >= 500) {
+      } else if (window.innerWidth < 1100 && window.innerWidth >= 700) {
         this.setState({ imageURL: "https://i.imgur.com/TOaYjyx.jpg" });
       } else {
         this.setState({ imageURL: "https://i.imgur.com/hDIvmbF.jpg" });
@@ -29,7 +29,7 @@ export default class Homepage extends Component{
     window.addEventListener("resize", () => {
       checkResolution();
     })
-    document.getElementById("front-image").style.height = `${window.outerHeight}px `;
+    document.getElementById("front-image").style.height = `${window.screen.height}px `;
   }
   render() {
     const { imageURL } = this.state;
