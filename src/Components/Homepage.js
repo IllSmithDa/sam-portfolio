@@ -36,7 +36,7 @@ export default class Homepage extends Component{
     return(
       <div className="app-container">
         <Navbar />
-        <div className="page-container">
+        <div id="page-div" className="page-container">
           <div className="image-container">
             <img id="front-image" className="homepage-image" src={imageURL} alt="homepage"></img>
             <div className="text-centered">

@@ -8,7 +8,7 @@ export default class Contact extends Component {
     return(
       <div id="contactID" className="contact-page-size contact-page">
         <br />
-        <h1 className="section-title">Contact</h1>
+        <h1 className="contact-title">Contact</h1>
         <div className="center-contact">
         <br />
           <p className="text-size set-font"><b>If you have any inquires, the best way to contact me would be through email or by phone.</b></p>
