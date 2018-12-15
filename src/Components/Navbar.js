@@ -9,34 +9,25 @@ class Navbar extends Component {
     }
   }
   componentDidMount() {
-    // text decoration not supported by IE or Edge so must be disabled
-    const isEdge = !!window.StyleMedia;
-    const isIE = /*@cc_on!@*/false || !!document.documentMode;
-    // Safari 3.0+ "[object HTMLElementConstructor]" 
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    
-    if (isEdge || isIE || isSafari) {
-      document.getElementById("home-tab").style.textDecoration = "none";
-    }
+
     // update underline and scroll position
     const updateScroll = (tab) => {
       const { currentID } = this.state;
 
       // text decoration not supported by IE or Edge and not working proerly in saffari 
       // so these commands must be ignored for these browsers
-      if (!isEdge && !isIE && !isSafari) {
-        // remove underline of the previously clicked tab
-        document.getElementById(currentID).style.textDecoration = "none";
-        // underline the new element
-        document.getElementById(tab).style.textDecoration = "underline";
-      }
+      // remove underline of the previously clicked tab
+      document.getElementById(currentID).style.textDecoration = "none";
+      // underline the new element
+      document.getElementById(tab).style.textDecoration = "underline";
+    
       this.setState({ currentID: tab });
     }
 
     // check position of the scroll
     const checkSrollPos = (scroll_pos) => {
       if (window.innerWidth > 1249) {
-        if(scroll_pos >= 0 && scroll_pos <= 499) {
+        if(scroll_pos <= 499) {
           updateScroll('home-tab');
         } else if (scroll_pos >= 500 && scroll_pos <= 1400) {
           updateScroll('about-tab');
@@ -60,7 +51,6 @@ class Navbar extends Component {
           updateScroll('contact-tab');
         }
       }
-
     }
     // check scroll position evey time user scrolls
     window.addEventListener('scroll', () => { 
@@ -77,6 +67,11 @@ class Navbar extends Component {
     // scroll into the selecte element
     document.getElementById(link).scrollIntoView({behavior: "smooth", block: "start"});
     // update current element 
+    const { currentID } = this.state;
+      // remove underline of the previously clicked tab
+    document.getElementById(currentID).style.textDecoration = "none";
+    // underline the new element
+    document.getElementById(tab).style.textDecoration = "underline";
     this.setState({ currentID: tab });
     // close tab on mobile
     if (window.innerWidth < 800) {
@@ -128,6 +123,7 @@ class Navbar extends Component {
           <div className="topbar">
           </div>
           <div id="mySidebar" className="sidebar">
+            <br />
             <p id="home-tab" onClick={()=>this.currentLink("front-image", "home-tab")} className="other-button home-button">Home</p>
             <p id="about-tab" onClick={()=>this.currentLink("aboutID", "about-tab")} className="other-button">What I Do</p>
             <p id="project-tab" onClick={()=>this.currentLink("projectID", "project-tab")} className="other-button">Projects</p>

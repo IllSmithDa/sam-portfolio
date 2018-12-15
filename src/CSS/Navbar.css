@@ -118,6 +118,27 @@
     left: -300px; }
 
   .topbar {
-    display: block; } }
+    display: block;
+    height: 65px; }
+
+  .open-button {
+    font-size: 30px;
+    width: 60px;
+    height: 65px; }
+
+  .close-button {
+    font-size: 30px;
+    width: 60px;
+    height: 65px; }
+
+  .tab-button-div {
+    height: 65px; }
+
+  .sidebar {
+    width: 265px;
+    top: 50px; }
+
+  .other-button {
+    font-size: 25px; } }
 
 /*# sourceMappingURL=Navbar.css.map */
