@@ -14,7 +14,7 @@ class Navbar extends Component {
     const isIE = /*@cc_on!@*/false || !!document.documentMode;
     // Safari 3.0+ "[object HTMLElementConstructor]" 
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
+    
     if (isEdge || isIE || isSafari) {
       document.getElementById("home-tab").style.textDecoration = "none";
     }
@@ -22,7 +22,8 @@ class Navbar extends Component {
     const updateScroll = (tab) => {
       const { currentID } = this.state;
 
-      // text decoration not supported by IE or Edge so these commands must be ignored for these browsers
+      // text decoration not supported by IE or Edge and not working proerly in saffari 
+      // so these commands must be ignored for these browsers
       if (!isEdge && !isIE && !isSafari) {
         // remove underline of the previously clicked tab
         document.getElementById(currentID).style.textDecoration = "none";
