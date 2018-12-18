@@ -113,7 +113,7 @@
 .home-button {
   text-decoration: underline; }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1250px) {
   .sidebar {
     left: -300px; }
 

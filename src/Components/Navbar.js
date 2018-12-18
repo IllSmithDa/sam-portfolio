@@ -74,7 +74,7 @@ class Navbar extends Component {
     document.getElementById(tab).style.textDecoration = "underline";
     this.setState({ currentID: tab });
     // close tab on mobile
-    if (window.innerWidth < 800) {
+    if (window.innerWidth < 1250) {
       this.closeNav();
     }
   }
@@ -85,7 +85,7 @@ class Navbar extends Component {
     document.getElementById("toggleButton").style.display = "none";
     document.getElementById("closedToggle").style.display = "block";
     // controls the rest of the application
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 1250) {
       document.getElementById("app-title").style.marginLeft = "225px";
 
     }
@@ -94,7 +94,7 @@ class Navbar extends Component {
     // true no matter what resolution
     document.getElementById("toggleButton").style.display = "block";
     document.getElementById("closedToggle").style.display = "none";
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 1250) {
       // only if resolution above 800px width
       // moves rest of app to 0px;
       document.getElementById("app-title").style.marginLeft = "0px";
