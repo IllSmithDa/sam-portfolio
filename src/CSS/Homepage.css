@@ -1,5 +1,6 @@
 .app-container {
   overflow: hidden;
+  margin-left: 75px;
 }
 .image-container {
   position: relative;

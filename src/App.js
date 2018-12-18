@@ -35,7 +35,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div id="app-title" className="app-background">
+      <div id="app-title">
         <Router>
           <Switch>
             <Route exact path="/" component={Homepage} />
