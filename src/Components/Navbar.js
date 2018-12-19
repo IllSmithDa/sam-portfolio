@@ -29,11 +29,11 @@ class Navbar extends Component {
       if (window.innerWidth > 1249) {
         if(scroll_pos <= 499) {
           updateScroll('home-tab');
-        } else if (scroll_pos >= 500 && scroll_pos <= 1400) {
+        } else if (scroll_pos >= 500 && scroll_pos <= 1699) {
           updateScroll('about-tab');
-        } else if (scroll_pos >= 1401 && scroll_pos <= 2430) {
+        } else if (scroll_pos >= 1700 && scroll_pos <= 2549) {
           updateScroll('project-tab');
-        } else if (scroll_pos >= 2431 && scroll_pos <= 3860) {
+        } else if (scroll_pos >= 2550 && scroll_pos <= 4150) {
           updateScroll('exp-tab');
         } else {
           updateScroll('contact-tab');
@@ -43,9 +43,9 @@ class Navbar extends Component {
           updateScroll('home-tab');
         } else if (scroll_pos >= 500 && scroll_pos <= 1899) {
           updateScroll('about-tab');
-        } else if (scroll_pos >= 1900 && scroll_pos <= 4349) {
+        } else if (scroll_pos >= 1900 && scroll_pos <= 3850) {
           updateScroll('project-tab');
-        } else if (scroll_pos >= 4350 && scroll_pos <= 5899) {
+        } else if (scroll_pos >= 3851 && scroll_pos <= 5899) {
           updateScroll('exp-tab');
         } else {
           updateScroll('contact-tab');
@@ -56,7 +56,6 @@ class Navbar extends Component {
     window.addEventListener('scroll', () => { 
       let last_known_scroll_position = 0;
       last_known_scroll_position = window.scrollY;
-      console.log(window.scrollX);
       checkSrollPos(last_known_scroll_position);
     })
   }
