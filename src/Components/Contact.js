@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "../CSS/PageLayout.css";
 export default class Contact extends Component {
   componentDidMount() {
-    document.getElementById("contact-ID").style.height = `${window.screen.height - 100}px`;
+    // sets the page height to match window resolution
+    document.getElementById("contact-ID").style.height = `${window.screen.height - 200}px`;
   }
   render() {
     return(

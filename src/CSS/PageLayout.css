@@ -20,7 +20,7 @@
   background-color: #A7A7A7;
   margin: 1% 2% 4% 2%;
   padding: 1em;
-  border: black 1px solid; }
+  border: black 2px solid; }
 
 .project-page {
   background-color: #E2E2E2;
@@ -59,7 +59,7 @@
   padding-bottom: 5%; }
 
 .resume-table {
-  border: 1px black solid;
+  border: black solid 2px;
   background-color: #E2E2E2;
   margin: 3% 5% 3% 5%;
   padding: 1em; }

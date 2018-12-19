@@ -15,7 +15,7 @@ export default class Homepage extends Component{
     }
   }
   componentDidMount() {
-    
+    // selects image src based on window resolution
     const checkResolution = () => {
       if (window.innerWidth >= 1100) {
         this.setState({ imageURL: "https://i.imgur.com/5xaWoLJ.jpg" });

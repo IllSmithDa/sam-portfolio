@@ -29,18 +29,19 @@
   font-size: 2.4em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   -webkit-text-fill-color: white;
-  -webkit-text-stroke-color: #71BBD0;
-  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: #A7A7A7;
+  -webkit-text-stroke-width: 2px; 
 }
 @media all and (max-width: 1250px) {
   .text-centered {
-    top: 44%;
-    width: 90%;
+    top: 48.5%;
+    width: 95%;
   }
   .header-title {
-    font-size: 3em;
+    font-size: 2em;
   }
   .header-subtitle {
-    font-size: 1.8em;
+    font-size: 1em;
+    -webkit-text-stroke-width: 1px; 
   }
 }

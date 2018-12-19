@@ -9,11 +9,9 @@ class Navbar extends Component {
     }
   }
   componentDidMount() {
-
     // update underline and scroll position
     const updateScroll = (tab) => {
       const { currentID } = this.state;
-
       // text decoration not supported by IE or Edge and not working proerly in saffari 
       // so these commands must be ignored for these browsers
       // remove underline of the previously clicked tab
@@ -23,29 +21,33 @@ class Navbar extends Component {
     
       this.setState({ currentID: tab });
     }
-
     // check position of the scroll
     const checkSrollPos = (scroll_pos) => {
+      // console.log(scroll_pos)
+      // console.log(document.body.scrollHeight)
+      // total hieght of a webpage
+      const totalHeight = document.body.scrollHeight;
       if (window.innerWidth > 1249) {
-        if(scroll_pos <= 499) {
+        // checks location of the current webpage
+        if(scroll_pos <= (totalHeight * 0.1)) {
           updateScroll('home-tab');
-        } else if (scroll_pos >= 500 && scroll_pos <= 1699) {
+        } else if (scroll_pos >= (totalHeight * 0.1) && scroll_pos < (totalHeight * 0.3)) {
           updateScroll('about-tab');
-        } else if (scroll_pos >= 1700 && scroll_pos <= 2549) {
+        } else if (scroll_pos >= (totalHeight * 0.3) && scroll_pos < (totalHeight * 0.49)) {
           updateScroll('project-tab');
-        } else if (scroll_pos >= 2550 && scroll_pos <= 4150) {
+        } else if (scroll_pos >= (totalHeight * 0.49) && scroll_pos <= (totalHeight * 0.78)) {
           updateScroll('exp-tab');
         } else {
           updateScroll('contact-tab');
         }
       } else {
-        if(scroll_pos >= 0 && scroll_pos <= 499) {
+        if(scroll_pos >= 0 && scroll_pos <= (totalHeight * 0.08)) {
           updateScroll('home-tab');
-        } else if (scroll_pos >= 500 && scroll_pos <= 1899) {
+        } else if (scroll_pos >= (totalHeight * 0.08) && scroll_pos <= (totalHeight * 0.28)) {
           updateScroll('about-tab');
-        } else if (scroll_pos >= 1900 && scroll_pos <= 3850) {
+        } else if ((totalHeight * 0.28) && scroll_pos < (totalHeight * 0.57)) {
           updateScroll('project-tab');
-        } else if (scroll_pos >= 3851 && scroll_pos <= 5899) {
+        } else if (scroll_pos >= (totalHeight * 0.57) && scroll_pos <= (totalHeight * 0.8)) {
           updateScroll('exp-tab');
         } else {
           updateScroll('contact-tab');
