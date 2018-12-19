@@ -3,7 +3,7 @@ import "../CSS/PageLayout.css";
 export default class Contact extends Component {
   componentDidMount() {
     // sets the page height to match window resolution
-    document.getElementById("contact-ID").style.height = `${window.screen.height - 200}px`;
+    document.getElementById("contact-ID").style.height = `${window.screen.height - (window.screen.height * .1)}px`;
   }
   render() {
     return(

@@ -30,7 +30,7 @@ export default class Homepage extends Component{
       checkResolution();
     })
     // set size of image based on screen size of monitor
-    document.getElementById("front-image").style.height = `${window.screen.height}px `;
+    document.getElementById("front-image").style.height = `${window.screen.height - (window.screen.height * .1)}px `;
   }
   render() {
     const { imageURL } = this.state;
