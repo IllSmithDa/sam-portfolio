@@ -29,6 +29,7 @@ export default class Homepage extends Component{
     window.addEventListener("resize", () => {
       checkResolution();
     })
+    // set size of image based on screen size of monitor
     document.getElementById("front-image").style.height = `${window.screen.height}px `;
   }
   render() {
@@ -36,12 +37,12 @@ export default class Homepage extends Component{
     return(
       <div className="app-container">
         <Navbar />
-        <div id="page-div" className="page-container">
-          <div className="image-container">
+        <div id="page-div" className="page-container ">
+          <div className="image-container page-size">
             <img id="front-image" className="homepage-image" src={imageURL} alt="homepage"></img>
             <div className="text-centered">
                 <h1 className="header-title"> Samuel Kim</h1>
-                <h4 className="header-subtitle set-font">Full stack web developer at your service </h4>
+                <h2 className="header-subtitle set-font">Full Stack Web Developer at your service</h2>
             </div>
           </div>
           <About />

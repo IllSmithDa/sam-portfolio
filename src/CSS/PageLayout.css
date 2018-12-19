@@ -1,55 +1,68 @@
 .page-size {
-  height: auto; }
-
-.contact-margin {
-  margin-top: 20%; }
+  height: auto;
+  margin-left: 75px; }
 
 .set-font {
   font-family: 'Arvo', sans-serif; }
-
-.resume-page-size {
-  height: 152vh; }
 
 .my-image {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
-  width: 10EM; }
+  width: 10em; }
 
 .my-image2 {
   width: 35%;
   margin-left: 2.5%; }
 
-.about-page {
-  background-color: #ABD5E1;
-  padding-bottom: 20em; }
-
 .project-table {
-  background-color: red; }
+  background-color: #A7A7A7;
+  margin: 1% 2% 4% 2%;
+  padding: 1em;
+  border: black 1px solid; }
 
 .project-page {
   background-color: #E2E2E2;
-  padding-bottom: 20em; }
+  padding-bottom: 10%; }
+
+.set-margin {
+  text-align: center; }
+
+.about-page {
+  display: flex;
+  flex-direction: column; }
+
+.about-page {
+  background-color: #ABD5E1;
+  padding-bottom: 14%; }
+
+.about-table {
+  display: flex;
+  justify-content: space-between;
+  margin: 4% 5% 0% 5%;
+  padding: 1em; }
+
+.about-sections {
+  width: 30%;
+  background-color: #FFFFFF;
+  border: black solid 2px;
+  padding: 1em; }
+
+.experience-margin {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 10%; }
 
 .resume-page {
   background-color: #A7A7A7;
-  padding-bottom: 15em; }
+  padding-bottom: 5%; }
 
-.contact-page {
-  background-color: #FFFFFF;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center; }
-
-.experience-margin {
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 1%; }
+.resume-table {
+  border: 1px black solid;
+  background-color: #E2E2E2;
+  margin: 3% 5% 3% 5%;
+  padding: 1em; }
 
 .resume-button {
   display: flex;
@@ -73,28 +86,31 @@
 
 .contact-title {
   text-align: center;
+  margin-bottom: 1em;
   font-family: Impact, 'Arial Narrow Bold', sans-serif; }
+
+.contact-page {
+  background-color: #FFFFFF;
+  position: relative;
+  text-align: center; }
+
+.center-contact {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%; }
 
 .section-container {
   display: flex;
   justify-content: space-between;
-  margin: 4em 10% 0% 10%; }
+  margin: 4em 3% 0% 3%; }
 
-.section-divider-left {
-  width: 30%; }
-
-.section-divider-center {
-  width: 30%;
-  margin: 0% 1% 0% 1%; }
-
-.section-divider-right {
-  width: 30%; }
-
-.center-contact {
-  text-align: center; }
+.table-sections {
+  margin: 0% 3% 0% 3%; }
 
 .image-size {
-  width: 3%;
+  width: 5%;
   margin: 0em 1em 0em 1em; }
 
 .pdf-size {
@@ -106,17 +122,17 @@
     margin: 8% 5% 0% 5%;
     padding-bottom: 4em; }
 
-  .section-divider-left {
-    width: 100%;
-    margin-top: 4em; }
+  .about-table {
+    display: block;
+    padding-bottom: 4em;
+    margin: 0% 0% 0% 0%; }
 
-  .section-divider-center {
+  .about-sections {
     width: 100%;
-    margin: 4em 1% 0% 1%; }
+    margin: 8% 0% 3% 0%; }
 
-  .section-divider-right {
-    margin-top: 4em;
-    width: 100%; }
+  .project-table {
+    margin: 1% 1% 5% 1%; }
 
   .page-size {
     height: auto; }
@@ -128,7 +144,13 @@
     width: 9em; }
 
   .image-size {
-    width: 10%; } }
+    width: 10%; }
+
+  .page-size {
+    margin-left: 0px; }
+
+  .center-contact {
+    width: 90%; } }
 @media all and (max-width: 800px) {
   .text-size {
     font-size: 12px; } }

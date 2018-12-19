@@ -80,10 +80,10 @@ class Navbar extends Component {
   }
   openNav = () => {
     // controls the tab bar
-    document.getElementById("mySidebar").style.left = "0";
-    document.getElementById("closebuttonstab").style.left = "0";
-    document.getElementById("toggleButton").style.display = "none";
-    document.getElementById("closedToggle").style.display = "block";
+    document.getElementById("my-sidebar").style.left = "0";
+    document.getElementById("tab-div").style.left = "0";
+    document.getElementById("open-toggle").style.display = "none";
+    document.getElementById("closed-toggle").style.display = "block";
     // controls the rest of the application
     if (window.innerWidth > 1250) {
       document.getElementById("app-title").style.marginLeft = "225px";
@@ -92,43 +92,43 @@ class Navbar extends Component {
   };
   closeNav = () => {
     // true no matter what resolution
-    document.getElementById("toggleButton").style.display = "block";
-    document.getElementById("closedToggle").style.display = "none";
+    document.getElementById("open-toggle").style.display = "block";
+    document.getElementById("closed-toggle").style.display = "none";
     if (window.innerWidth > 1250) {
       // only if resolution above 800px width
       // moves rest of app to 0px;
       document.getElementById("app-title").style.marginLeft = "0px";
       document.getElementById("app-title").style.transition = "0.2s";
       // sidebar to original position and the buttons as well
-      document.getElementById("mySidebar").style.left = "-225px";
-      document.getElementById("closebuttonstab").style.left = "-225px";
-      document.getElementById("mySidebar").style.transition = "0.2s";
-      document.getElementById("closebuttonstab").style.transition = "0.2s";
+      document.getElementById("my-sidebar").style.left = "-225px";
+      document.getElementById("tab-div").style.left = "-225px";
+      document.getElementById("my-sidebar").style.transition = "0.2s";
+      document.getElementById("tab-div").style.transition = "0.2s";
     } else {
       // sidebar to original position and the buttons as well but for smaller resolutions
-      document.getElementById("mySidebar").style.left = "-300px";
-      document.getElementById("closebuttonstab").style.left = "-225px";
-      document.getElementById("mySidebar").style.transition = "0.2s";
-      document.getElementById("closebuttonstab").style.transition = "0.2s";
+      document.getElementById("my-sidebar").style.left = "-300px";
+      document.getElementById("tab-div").style.left = "-225px";
+      document.getElementById("my-sidebar").style.transition = "0.2s";
+      document.getElementById("tab-div").style.transition = "0.2s";
     }
   }
 
   render() {
     return(
       <div className="navbar-postion">
-        <div id="closebuttonstab" className="tab-button-div">
-          <button id="toggleButton" className="open-button" onClick={this.openNav}>☰</button>
-          <button id="closedToggle" className="close-button" onClick={this.closeNav}>×</button>
+        <div id="tab-div" className="tab-button-div">
+          <button id="open-toggle" className="open-button" onClick={this.openNav}>☰</button>
+          <button id="closed-toggle" className="close-button" onClick={this.closeNav}>×</button>
         </div>
           <div className="topbar">
           </div>
-          <div id="mySidebar" className="sidebar">
+          <div id="my-sidebar" className="sidebar">
             <br />
             <p id="home-tab" onClick={()=>this.currentLink("front-image", "home-tab")} className="other-button home-button">Home</p>
-            <p id="about-tab" onClick={()=>this.currentLink("aboutID", "about-tab")} className="other-button">What I Do</p>
-            <p id="project-tab" onClick={()=>this.currentLink("projectID", "project-tab")} className="other-button">Projects</p>
-            <p id="exp-tab"onClick={()=>this.currentLink("resumeID", "exp-tab")} className="other-button">Experience</p>
-            <p id="contact-tab"onClick={()=>this.currentLink("contactID", "contact-tab")} className="other-button">Contact</p>
+            <p id="about-tab" onClick={()=>this.currentLink("about-ID", "about-tab")} className="other-button">What I Do</p>
+            <p id="project-tab" onClick={()=>this.currentLink("project-ID", "project-tab")} className="other-button">Projects</p>
+            <p id="exp-tab"onClick={()=>this.currentLink("resume-ID", "exp-tab")} className="other-button">Experience</p>
+            <p id="contact-tab"onClick={()=>this.currentLink("contact-ID", "contact-tab")} className="other-button">Contact</p>
         </div>
       </div>
     );

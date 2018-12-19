@@ -49,6 +49,7 @@ const resume = [
   ]
 
 },
+/*
 {
   type: 'skills',
   bulletList:
@@ -78,6 +79,6 @@ const resume = [
     `University of Southern California - MSW Social Work 2015`,
     `UCLA - BA Sociology 2014`,
   ],
-}
+} */
 ];
 export default resume;

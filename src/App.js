@@ -10,26 +10,21 @@ class App extends Component {
     window.addEventListener("resize", function(){
       // moves position of app based on tab closed or open and resolution
       // less than 800px and close button is appearing
-      if (window.innerWidth > 1250 && document.getElementById("closedToggle").style.display === "block" ) {
+      if (window.innerWidth > 1250 && document.getElementById("closed-toggle").style.display === "block" ) {
         // move rest of app by 225px left
         document.getElementById("app-title").style.marginLeft = "225px";
+        
       }   // less than 800px and close button is not appearing
-      if (window.innerWidth > 1250 && document.getElementById("closedToggle").style.display === "none") {
+      if (window.innerWidth > 1250 && document.getElementById("closed-toggle").style.display === "none") {
         // move rest of app back to 0 and sidebar back to original position
         document.getElementById("app-title").style.marginLeft = "0px";
-        document.getElementById("mySidebar").style.left = "-225px";
-        document.getElementById("page-div").style.marginLeft = "75px";
-        document.getElementById("page-div").style.transition = "0.2s";
+        document.getElementById("my-sidebar").style.left = "-225px";
       } 
-      if (window.innerWidth <= 1250 && document.getElementById("closedToggle").style.display === "block") {
-        document.getElementById("page-div").style.marginLeft = "0px";
-        document.getElementById("page-div").style.transition = "0.2s";
+      if (window.innerWidth <= 1250 && document.getElementById("closed-toggle").style.display === "block") {
         document.getElementById("app-title").style.marginLeft = "0px";
       }
-      if (window.innerWidth <= 1250 && document.getElementById("closedToggle").style.display === "none") {
-        document.getElementById("mySidebar").style.left = "-300px";
-        document.getElementById("page-div").style.marginLeft = "0px";
-        document.getElementById("page-div").style.transition = "0.2s";
+      if (window.innerWidth <= 1250 && document.getElementById("closed-toggle").style.display === "none") {
+        document.getElementById("my-sidebar").style.left = "-300px";
       }
     });
   }
