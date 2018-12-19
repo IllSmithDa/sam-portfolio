@@ -137,9 +137,6 @@
   .page-size {
     height: auto; }
 
-  .resume-page-size {
-    height: 100vh; }
-
   .my-image {
     width: 9em; }
 
@@ -150,7 +147,10 @@
     margin-left: 0px; }
 
   .center-contact {
-    width: 90%; } }
+    width: 90%; }
+
+  .resume-page {
+    padding-bottom: 10%; } }
 @media all and (max-width: 800px) {
   .text-size {
     font-size: 12px; } }
