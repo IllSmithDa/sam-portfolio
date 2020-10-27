@@ -1,13 +1,14 @@
 import React, {Component} from "react";
-import "../CSS/Navbar.css";
-import "../CSS/PageLayout.css";
-class Navbar extends Component {
+import "./Mobilenav.css";
+import jquery from 'jquery';
+class Mobilenav extends Component {
   constructor () {
     super();
     this.state = {
       currentID: "home-tab",
     }
   }
+  /*
   componentDidMount() {
     // update underline and scroll position
     const updateScroll = (tab) => {
@@ -62,23 +63,19 @@ class Navbar extends Component {
     })
   }
 
-
+*/
 
   currentLink = (link, tab) => {
     // scroll into the selecte element
     document.getElementById(link).scrollIntoView({behavior: "smooth", block: "start"});
+    jquery('#collapsibleNavbar').addClass('collapse');
     // update current element 
     const { currentID } = this.state;
-      // remove underline of the previously clicked tab
-    document.getElementById(currentID).style.textDecoration = "none";
-    // underline the new element
-    document.getElementById(tab).style.textDecoration = "underline";
     this.setState({ currentID: tab });
     // close tab on mobile
-    if (window.innerWidth < 1250) {
-      this.closeNav();
-    }
+
   }
+  /*
   openNav = () => {
     // controls the tab bar
     document.getElementById("my-sidebar").style.left = "0";
@@ -113,27 +110,35 @@ class Navbar extends Component {
       document.getElementById("tab-div").style.transition = "0.2s";
     }
   }
-
+*/
   render() {
     return(
-      <div className="navbar-postion">
-        <div id="tab-div" className="tab-button-div">
-          <button id="open-toggle" className="open-button" onClick={this.openNav}>☰</button>
-          <button id="closed-toggle" className="close-button" onClick={this.closeNav}>×</button>
-        </div>
-          <div className="topbar">
+      <div class="mobile-position">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-display">
+          <a class="navbar-brand" href="#"></a>
+          <button class="mobile-nav-button" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              &#9776;
+            </button>
+        </nav>
+          <div class="collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav nav">
+              <li class="nav-item">
+                <span id="home-tab" data-target="#collapsibleNavbar" data-toggle="collapse"  onClick={()=>this.currentLink("Home-ID", "home-tab")}>Home</span>
+              </li>
+              <li class="nav-item">
+                <span id="about-tab"data-target="#collapsibleNavbar" data-toggle="collapse" onClick={()=>this.currentLink("about-ID", "about-tab")}>About Me</span>
+              </li>
+              <li class="nav-item">
+                <span id="project-tab" data-target="#collapsibleNavbar" data-toggle="collapse" onClick={()=>this.currentLink("project-ID", "project-tab")}>Projects</span>
+              </li>
+              <li class="nav-item">
+                <span id="contact-tab"  data-target="#collapsibleNavbar" data-toggle="collapse" onClick={()=>this.currentLink("contact-ID", "contact-tab")} >Contact Me</span>
+              </li>
+            </ul>
           </div>
-          <div id="my-sidebar" className="sidebar">
-            <br />
-            <p id="home-tab" onClick={()=>this.currentLink("front-image", "home-tab")} className="other-button home-button">Home</p>
-            <p id="about-tab" onClick={()=>this.currentLink("about-ID", "about-tab")} className="other-button">What I Do</p>
-            <p id="project-tab" onClick={()=>this.currentLink("project-ID", "project-tab")} className="other-button">Projects</p>
-            <p id="exp-tab"onClick={()=>this.currentLink("resume-ID", "exp-tab")} className="other-button">Experience</p>
-            <p id="contact-tab"onClick={()=>this.currentLink("contact-ID", "contact-tab")} className="other-button">Contact</p>
-        </div>
       </div>
     );
   }
 }
 
-export default Navbar;
+export default Mobilenav;

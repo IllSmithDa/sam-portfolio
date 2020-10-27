@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import Navbar from "./Navbar";
-import About from "./About";  
-import Projects from './Projects';
-import Contact from './Contact';
-import Resume from './Resume';
-import "../CSS/PageLayout.css";
-import '../CSS/Homepage.css';
+import Desktopnav from '../Desktopnav/Desktopnav';
+import Mobilenav from '../Mobilenav/Mobilenav';
+import About from '../About/About';
+import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
+import './Homepage.css';
 
 export default class Homepage extends Component{
   constructor() {
@@ -16,6 +15,7 @@ export default class Homepage extends Component{
   }
   componentDidMount() {
     // selects image src based on window resolution
+    /*
     const checkResolution = () => {
       if (window.innerWidth >= 1100) {
         this.setState({ imageURL: "https://i.imgur.com/5xaWoLJ.jpg" });
@@ -31,26 +31,29 @@ export default class Homepage extends Component{
     })
     // set size of image based on screen size of monitor
     document.getElementById("front-image").style.height = `${window.screen.height - (window.screen.height * .1)}px `;
+    */
   }
   render() {
     const { imageURL } = this.state;
     return(
-      <div className="app-container">
-        <Navbar />
-        <div id="page-div" className="page-container ">
-          <div className="image-container page-size">
-            <img id="front-image" className="homepage-image" src={imageURL} alt="homepage"></img>
-            <div className="text-centered">
-                <h1 className="header-title"> Samuel Kim</h1>
-                <h2 className="header-subtitle set-font">Full Stack Web Developer at your service</h2>
+      <div id="Home-ID" className="app-container"> 
+    
+          <div className="homepage-container">
+          <Desktopnav />
+          <Mobilenav />
+            <div className="text-banner">
+              <div>
+                <h1>Hi!</h1>
+                <h2>I'm Sam</h2>
+                <h2>A Full Stack Web Developer from California</h2>
+              </div>
             </div>
           </div>
           <About />
           <Projects />
-          <Resume />
           <Contact />
-        </div>
       </div>
     )
   }
 }
+// <img id="front-image" className="homepage-image" src={imageURL} alt="homepage"></img>

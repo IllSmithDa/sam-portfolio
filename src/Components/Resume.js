@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import UUID from 'uuid/v1';
-import ExperienceData from '../Data/Resume';
-import "../CSS/PageLayout.css";
+import ExperienceData from '../Data/Resume';a
 
 
 export default class Resume extends Component {

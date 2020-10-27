@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import "../CSS/PageLayout.css";
+import "../Desktopnav/Desktopnav"
+import Desktopnav from "../Desktopnav/Desktopnav";
+import Mobilenav from '../Mobilenav/Mobilenav';
+import "./Contact.css"
 export default class Contact extends Component {
   componentDidMount() {
     // sets the page height to match window resolution
@@ -7,20 +10,19 @@ export default class Contact extends Component {
   }
   render() {
     return(
-      <div id="contact-ID" className="contact-page page-size">
-        <br />
+      <div id="contact-ID" className="contact-container">
         <div className="center-contact">
-          <h1 id="contact-header" className="contact-title">Contact</h1>
+          <h1 className="contact-title">Contact</h1>
           <p className="text-size set-font"><b>If you have any inquires, the best way to contact me would be through email or by phone.</b></p>
           <p className="text-size set-font"><b>Email: </b>sam404kim@gmail.com</p>
           <p className="text-size set-font"><b>Phone number: </b>(510) 589 - 8123</p>
           <p className="text-size set-font"><b>Other ways to connect:</b></p>
           <div>
             <a href="https://github.com/IllSmithDa" target="_blank" rel="noopener noreferrer">
-              <img alt="linkedin_link" src="https://i.imgur.com/dQqam06.png" className="image-size" />
+              <img alt="linkedin_link" src="https://i.imgur.com/dQqam06.png" className="image-icon" />
             </a>
             <a href="https://www.linkedin.com/in/samuel-kim-1336ab112/" target="_blank" rel="noopener noreferrer">
-              <img alt="linkedin_link" src="https://i.imgur.com/AfBFS6f.png" className="image-size" />
+              <img alt="linkedin_link" src="https://i.imgur.com/AfBFS6f.png" className="image-icon" />
             </a>
           </div>
         </div>

@@ -1,0 +1,33 @@
+.contact-container {
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+.center-contact {
+    width: 1023px;
+    margin: auto;
+    background-color: #FFF;
+    border-radius: 2rem;
+
+}
+.center-contact h1 {
+    color: #E98074;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.center-contact p, .center-contact img, .center-contact h1, .center-contact div {
+    margin-top: 1rem;
+    background-color: inherit;
+}
+.center-contact img {
+    margin-right: 1rem;
+}
+.image-icon {
+    width: 50px;
+}
+
+@media(max-width: 1200px) {
+    .center-contact {
+        width: 90%;
+    }
+}
