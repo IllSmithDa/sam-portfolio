@@ -48,7 +48,8 @@
     color: #FFF;
 }
 .mobile-nav-button {
-    background-color: #E98074;
+    background-color: inherit;
+    -webkit-text-fill-color: #E98074;
     color: #E98074;
     font-size: 1.2rem;
     border-radius: .3rem;
