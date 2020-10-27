@@ -21,16 +21,16 @@
 .text-banner {
   background-color: inherit;
   height: 900px;
+  width: 1023px;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   background-color:inherit;
   align-items: center;
-}
-.text-banner div {
-  width: 50%;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
 .text-banner div h1 {
   font-size: 5em;
   font-family: Arial, Helvetica, sans-serif;
@@ -48,15 +48,13 @@
 @media(max-width: 1200px) {
   .text-banner {
     padding-left:0;
-  }
-  .text-banner div {
     width: 90%;
-    padding-left: 2rem;
+    height: 95vh;
   }
   .text-banner div h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .text-banner div h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }

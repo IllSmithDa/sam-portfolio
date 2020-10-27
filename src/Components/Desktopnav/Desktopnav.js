@@ -22,7 +22,6 @@ class Desktopnav extends Component{
       // underline the new element
      document.getElementById(tab).style.textDecoration = "underline";
       this.setState({ currentID: tab });
-      // close tab on mobile
     }
 
     render() {
