@@ -1,5 +1,4 @@
 import React from "react";
-import "../CSS/PageLayout.css";
 
 const FullResume = () => {
   return (

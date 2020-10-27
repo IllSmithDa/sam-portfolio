@@ -1,0 +1,62 @@
+/*
+  Potential Font colors: 
+  E98074  
+  E85A4F
+  EAE7DC
+  D8C3A5
+  8E8D8A
+*/
+.app-container {
+  background-color: #EAE7DC;
+}
+.homepage-container {
+  background-image: 
+  linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  url('https://images.pexels.com/photos/1439157/pexels-photo-1439157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: center; 
+}
+
+
+.text-banner {
+  background-color: inherit;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  background-color:inherit;
+  align-items: center;
+}
+.text-banner div {
+  width: 50%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.text-banner div h1 {
+  font-size: 5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #EAE7DC;
+}
+.text-banner div h2 {
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-fill-color: #EAE7DC;
+  font-weight: 700;
+
+}
+
+@media(max-width: 1200px) {
+  .text-banner {
+    padding-left:0;
+  }
+  .text-banner div {
+    width: 90%;
+    padding-left: 2rem;
+  }
+  .text-banner div h1 {
+    font-size: 3rem;
+  }
+  .text-banner div h2 {
+    font-size: 1.1rem;
+  }
+}
