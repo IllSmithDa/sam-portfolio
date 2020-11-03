@@ -1,5 +1,13 @@
+/*
+  Potential Font colors: 
+  E98074  
+  E85A4F
+  EAE7DC
+  D8C3A5
+  8E8D8A
+*/
 .about-container {
-    background-color: #FFF;
+    background-color: #EAE7DC;
 }
 .about-page {
     display: flex;
@@ -11,7 +19,8 @@
     min-height: 950px;
 }
 .about-page h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    font-family: Times, Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 .about-table {
@@ -24,14 +33,29 @@
 .about-table div p {
     color: #000;
 }
-.about-table div, .about-table div p, .about-table div img, .about-page h1, .center-contact div {
+.about-table div, .about-table div img, .about-page h1, .center-contact div {
     background-color: #FFF;
+    font-weight: 700;
+    font-family: Times, Arial, Helvetica, sans-serif;
+
 }
-.about-sections{
+.about-sections p{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: Times, Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.about-sections p{
     width: 100%;
     margin-bottom: 2rem;
 }
-
+.about-sections h1 {
+    color: #E98074;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Times, Arial, Helvetica, sans-serif;
+}
 .about-sections img {
     width: 75px;
     margin-right: 1rem;

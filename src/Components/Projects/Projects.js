@@ -8,7 +8,7 @@ const listProjects = () => {
   const projectList = [];
   for (let i = 0; i < ProjectList.length; i++) {
     const projectArr = [];
-    projectArr.push(<h3 key={UUID()} className="set-font set-margin"><b>{ProjectList[i].projectName}</b></h3>)
+    projectArr.push(<h3 key={UUID()} className="set-font set-margin">{ProjectList[i].projectName}</h3>)
     projectArr.push(<a key={UUID()} href={ProjectList[i].projectLink} target="_blank" rel="noopener noreferrer">
     <img key={UUID()} src={ProjectList[i].imageSrc} alt="project-src" className="image-item"/>
   </a>)

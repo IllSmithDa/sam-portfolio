@@ -2,6 +2,7 @@
     background-color: #FFF;
     display: flex;
     justify-content: center;
+    min-height: 950px;
 }
 .center-contact {
     width: 1023px;
@@ -12,10 +13,15 @@
 }
 .center-contact h1 {
     color: #E98074;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 700;
+    font-family: Times, Arial, Helvetica, sans-serif;
 }
-.center-contact p, .center-contact img, .center-contact h1, .center-contact div {
+.center-contact p {
+    font-family: Times, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.center-contact p, .center-contact h1, .center-contact div {
     margin-top: 1rem;
     background-color: inherit;
 }

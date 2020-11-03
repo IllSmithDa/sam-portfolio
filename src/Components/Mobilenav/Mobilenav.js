@@ -5,7 +5,7 @@ class Mobilenav extends Component {
   constructor () {
     super();
     this.state = {
-      currentID: "mob-home-tab",
+      currentID: "home-mobile",
     }
   }
   componentDidMount() {
@@ -30,15 +30,15 @@ class Mobilenav extends Component {
     return(
       <div class="mobile-position">
         <nav class="navbar navbar-expand-md navbar-display">
-          <a class="navbar-brand" href="#"></a>
-          <button class="mobile-nav-button" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              &#9776;
-            </button>
+          <span id="home-mobile" class="navbar-home-icon" onClick={()=>this.currentLink("Home-ID", "home-mobile")}>SK</span>
+          <button class="mobile-nav-button" data-target="#collapsibleNavbar" data-toggle="collapse" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            &#9776;
+          </button>
         </nav>
           <div class="collapse" id="collapsibleNavbar">
             <ul class="navbar-nav nav">
               <li class="nav-item">
-                <span id="mob-home-tab" data-target="#collapsibleNavbar" data-toggle="collapse"  onClick={()=>this.currentLink("Home-ID", "mob-home-tab")}>Home</span>
+                <span id="mob-home-tab" data-target="#collapsibleNavbar" data-toggle="collapse"  onClick={()=>this.currentLink("Home-ID", "home-mobile")}>Home</span>
               </li>
               <li class="nav-item">
                 <span id="mob-about-tab"data-target="#collapsibleNavbar" data-toggle="collapse" onClick={()=>this.currentLink("about-ID", "mob-about-tab")}>About Me</span>

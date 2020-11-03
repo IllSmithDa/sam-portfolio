@@ -30,10 +30,16 @@ class Desktopnav extends Component{
                 <div className="sticky-nav">
                     <div className="nav-container">
                         <div className="tab-container">
-                            <span id="home-tab" onClick={()=>this.currentLink("Home-ID", "home-tab")}>Home</span>
-                            <span id="about-tab" onClick={()=>this.currentLink("about-ID", "about-tab")}>About Me</span>
-                            <span id="project-tab" onClick={()=>this.currentLink("project-ID", "project-tab")}>Projects</span>
-                            <span id="contact-tab" onClick={()=>this.currentLink("contact-ID", "contact-tab")} >Contact Me</span>
+                            <div>
+                                <span id="home-tab" onClick={()=>this.currentLink("Home-ID", "home-tab")}>SK</span>
+                            </div>
+                            <div className="link-tabs">
+                                <div>
+                                    <span id="about-tab" onClick={()=>this.currentLink("about-ID", "about-tab")}>About Me</span>
+                                    <span id="project-tab" onClick={()=>this.currentLink("project-ID", "project-tab")}>Projects</span>
+                                    <span id="contact-tab" onClick={()=>this.currentLink("contact-ID", "contact-tab")} >Contact Me</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

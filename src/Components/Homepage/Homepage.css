@@ -33,13 +33,13 @@
 
 .text-banner div h1 {
   font-size: 5em;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: Times, Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: #EAE7DC;
 }
 .text-banner div h2 {
   font-size: 2em;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: Times, Arial, Helvetica, sans-serif;
   -webkit-text-fill-color: #EAE7DC;
   font-weight: 700;
 

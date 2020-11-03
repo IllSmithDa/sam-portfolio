@@ -1,3 +1,7 @@
+@font-face {
+    font-family: bevan;
+    src: url()
+}
 .nav-height {
     height: 50px;
 }
@@ -9,7 +13,7 @@
     background-color: #EAE7DA;
 }
 .nav-container {
-    width: 80%;
+    width: 1023px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -18,15 +22,21 @@
     height: 50px;
 
 }
-
+.tab-container div{
+    display: flex;
+    width: 1023px;
+    margin: auto;
+    justify-content: space-between;
+}
 .tab-container span{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Times, Arial, Helvetica, sans-serif;
     color: #E98074;
     font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
+}
+#home-tab {
+    
 }
 .tab-container span a {
     color: inherit;
@@ -36,5 +46,6 @@
 @media(max-width: 1200px) {
     .nav-container {
         display: none;
+        width: 100%;
     }
 }

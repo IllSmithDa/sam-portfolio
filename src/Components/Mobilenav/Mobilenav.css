@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Bevan;
+  src: url('../Assets/Bevan-Regular.ttf')
+}
 .mobile-position {
   display: none;
   overflow: hidden; 
@@ -18,7 +22,7 @@
 .navbar-container span {
   font-size: 1.2rem;
   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Times, Arial, Helvetica, sans-serif;
   margin-left: 2rem;
   margin-right: 2rem;
   cursor: pointer;
@@ -29,7 +33,23 @@
   text-decoration: none;
 }
 .navbar-display {
-    display: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: inherit;
+}
+
+.navbar-display span{
+  font-family: Bevan, Times, Arial, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 0 6px;
+  color: #E98074;
+  border: 1px solid #E98074;
+  cursor: pointer;
+}
+.navbar-display span:hover {
+
 }
 #collapsibleNavbar {
     background-color:inherit;
@@ -43,6 +63,7 @@
   font-size: 1.2rem;
   cursor: pointer;
   font-weight: 700;
+  font-family: Times, Arial, Helvetica, sans-serif;
 }
 .navbar-toggler-icon {
     color: #FFF;
@@ -61,11 +82,12 @@
   .mobile-position {
     display: block;
   }
-    .navbar-display {
-        display: flex;
-        justify-content: space-between;
-        background-color: inherit;
-    }
+  .navbar-display {
+    display: flex;
+    justify-content: space-between;
+    background-color: inherit;
+
+}
     .comp-container {
         display: none;
     }

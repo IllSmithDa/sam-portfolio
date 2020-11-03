@@ -28,7 +28,7 @@ const projects = [
     projectName:'Infinite Softworks',
     projectDesc:`Infinite Softworks is a Salesforce Community Cloud project which allows users to browse products, get product support and company news`,
     projectLink:'https://wonderland21-developer-edition.na172.force.com/wonderlandcustom/s/',
-    shortLink: 'wonderland21-developer-edition.na172.force.com/wonderlandcustom/s/',
+    shortLink: 'wonderland21.com/',
     projectTech:'Salesforce Community Cloud, LWC, Aura, Apex, JavaScript, Java, HTML, CSS',
     imageSrc:`https://i.imgur.com/sz83tE3.png`
   },
