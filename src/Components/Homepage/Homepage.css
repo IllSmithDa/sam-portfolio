@@ -11,7 +11,7 @@
 }
 .homepage-container {
   background-image: 
-  linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
   url('https://images.pexels.com/photos/1439157/pexels-photo-1439157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-size: cover;
   background-position: center; 

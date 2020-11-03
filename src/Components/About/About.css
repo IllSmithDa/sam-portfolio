@@ -17,11 +17,13 @@
     background-color: #FFF;
     color: #E98074;
     min-height: 950px;
+    padding-bottom: 2rem;
 }
 .about-page h1 {
     font-size: 2.3rem;
     font-family: Times, Arial, Helvetica, sans-serif;
     font-weight: 700;
+    margin-top: 1rem;
 }
 .about-table {
     width: 1023px;
@@ -39,9 +41,8 @@
     font-family: Times, Arial, Helvetica, sans-serif;
 
 }
-.about-sections p{
-    margin-top: 1rem;
-    font-size: 1.1rem;
+.about-sections p {
+    margin-top: 0.5rem;
     font-weight: 700;
     font-family: Times, Arial, Helvetica, sans-serif;
     width: 100%;
@@ -59,6 +60,7 @@
 .about-sections img {
     width: 75px;
     margin-right: 1rem;
+    
 }
 .my-image {
     margin: 2rem;

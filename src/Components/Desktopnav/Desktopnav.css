@@ -22,7 +22,7 @@
     height: 50px;
 
 }
-.tab-container div{
+.tab-container{
     display: flex;
     width: 1023px;
     margin: auto;
@@ -36,7 +36,19 @@
     cursor: pointer;
 }
 #home-tab {
-    
+    font-family: Bevan, Times, Arial, serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0 6px;
+    color: #E98074;
+    border: 1px solid #E98074;
+    cursor: pointer;
+}
+.link-tabs div {
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
 }
 .tab-container span a {
     color: inherit;
