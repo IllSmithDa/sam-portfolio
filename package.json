@@ -2,6 +2,7 @@
   "name": "samkim-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
