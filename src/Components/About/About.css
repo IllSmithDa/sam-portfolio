@@ -7,16 +7,15 @@
   8E8D8A
 */
 .about-container {
-    background-color: #EAE7DC;
+    background-color: #FFF;
+    min-height: 950px;
+    
 }
 .about-page {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FFF;
+    display: grid;
+    place-items: center;
     color: #E98074;
-    min-height: 950px;
+    min-height: 700px;
     padding-bottom: 2rem;
 }
 .about-page h1 {
