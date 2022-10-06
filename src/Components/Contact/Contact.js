@@ -4,10 +4,6 @@ import Desktopnav from "../Desktopnav/Desktopnav";
 import Mobilenav from '../Mobilenav/Mobilenav';
 import "./Contact.css"
 export default class Contact extends Component {
-  componentDidMount() {
-    // sets the page height to match window resolution
-    document.getElementById("contact-ID").style.height = `${window.screen.height - (window.screen.height * .1)}px`;
-  }
   render() {
     return(
       <div id="contact-ID" className="contact-container">

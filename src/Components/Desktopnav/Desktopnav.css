@@ -54,7 +54,9 @@
     color: inherit;
     outline: none;
 }
-
+.tab-underline {
+    text-decoration: underline;
+}
 @media(max-width: 1200px) {
     .nav-container {
         display: none;
