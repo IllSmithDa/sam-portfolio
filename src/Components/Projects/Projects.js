@@ -1,37 +1,33 @@
 import React from "react";
-import Desktopnav from "../Desktopnav/Desktopnav";
 import ProjectList from "../../Data/ProjectList";
 import UUID from 'uuid/v1';
 import "./Projects.css";
 
-const listProjects = () => {
-  const projectList = [];
-  for (let i = 0; i < ProjectList.length; i++) {
-    const projectArr = [];
-    projectArr.push(<h3 key={UUID()} className="set-font set-margin">{ProjectList[i].projectName}</h3>)
-    projectArr.push(<a key={UUID()} href={ProjectList[i].projectLink} target="_blank" rel="noopener noreferrer">
-    <img key={UUID()} src={ProjectList[i].imageSrc} alt="project-src" className="image-item"/>
-  </a>)
-    projectArr.push(<p key={UUID()} className="set-font">{ProjectList[i].projectDesc}</p>)
-    projectArr.push(<p key={UUID()} className="set-font">
-                      <b >Project Link: </b> 
-                      <a key={UUID()} href={ProjectList[i].projectLink} target="_blank" rel="noopener noreferrer">
-                      {ProjectList[i].shortLink}
-                      </a>
-                    </p>)
-    projectArr.push(<p key={UUID()} className="set-font"><b>Project Tech Stack:</b> {ProjectList[i].projectTech}</p>)
-    projectList.push(<div key={UUID()} className="project-table">{projectArr}</div>);
-  }
-  return projectList;
-}
 const Project = () => {
-  listProjects();
+  const listProjects = ProjectList.map((project) => {
+    return (
+      <div key={UUID()} className="list-container">
+        <h3 className="set-font set-margin">{project.projectName}</h3>
+        <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
+         <img src={require(`${project.imageSrc}`)} alt="project-src" className="image-item"/>
+        </a>
+        <p className="set-font proj-description">{project.projectDesc}</p>
+        <p className="set-font">
+          <b >Project Link: </b> 
+          <a href={project.imageSrc} target="_blank" rel="noopener noreferrer">
+          {project.shortLink}
+          </a>
+        </p>
+        <p className="set-font"><b>Project Tech Stack:</b> {project.projectTech}</p>
+      </div>
+    );
+  })
   return(
     <div id="project-ID" className="page-size project-page">
       <div className="project-container">
         <h1 className="section-title">Projects</h1>
         <div className="section-container">
-          {listProjects()} 
+          {listProjects} 
         </div>
       </div>
 

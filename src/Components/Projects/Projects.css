@@ -1,5 +1,5 @@
 .project-page {
-    min-height: 950px;
+    min-height: 100vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
     color: #E98074;
@@ -13,7 +13,6 @@
     grid-gap: 50px;
     color: #000;
 }
-
 .image-item {
     max-width:  100%;
     margin: 0;
@@ -46,7 +45,14 @@
     font-family: Times, Arial, Helvetica, sans-serif;
     text-align: center;
 }
-
+.list-container {
+    margin-top: 4em
+}
+.proj-description {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
 @media(max-width: 1200px) {
     .project-container {
         width: 90%;

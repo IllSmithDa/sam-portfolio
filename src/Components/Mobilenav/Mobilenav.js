@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './Mobilenav.css';
-import jquery from 'jquery';
 
 export default function Mobilenav() {
 

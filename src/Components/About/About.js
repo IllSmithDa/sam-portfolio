@@ -1,6 +1,5 @@
 import React from "react";
 import "../Desktopnav/Desktopnav"
-import Desktopnav from "../Desktopnav/Desktopnav";
 import "./About.css";
 const About = () => {
   return(
