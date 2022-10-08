@@ -1,5 +1,4 @@
 import React from "react";
-import Desktopnav from "../Desktopnav/Desktopnav";
 import "./Errorpage.css";
 const ErrorPage = () => {
   return (
