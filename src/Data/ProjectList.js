@@ -17,12 +17,12 @@ const projects = [
     imageSrc: `./images/gokloak.png`
   },
   {
-    projectName:'Videorealm',
-    projectDesc:'Videorealm is a video sharing application that allows users to upload, watch and comment on videos.',
-    projectLink:'https://videorealm.surge.sh/',
-    shortLink: 'videorealm.surge.sh',
-    projectTech:'Javascript, ES6, React, Redux, Node, MongoDB, Mongoose, Mocha, Chai',
-    imageSrc:`./images/videorealm.png`
+    projectName: 'Infinite Firestorm',
+    projectDesc: 'Firestorm is a database for video games and includes many generations of both consoles and pc titles.',
+    projectLink:'https://firestorm.surge.sh',
+    shortLink: 'Firestorm.com',
+    projectTech: 'React.js, TypeScript, Styled-Components, JavaScript, HTML, CSS, Node.js, MongoDB', 
+    imageSrc:`./images/firestorm.png`
   },
   {
     projectName:'Ironcodeman',
@@ -42,12 +42,12 @@ const projects = [
     imageSrc:`./images/infinite.png`
   },
   {
-    projectName: 'Infinite Firestorm',
-    projectDesc: 'Firestorm is a database for video games and includes many generations of both consoles and pc titles.',
-    projectLink:'https://firestorm.surge.sh',
-    shortLink: 'Firestorm.com',
-    projectTech: 'React.js, TypeScript, Styled-Components, JavaScript, HTML, CSS, Node.js, MongoDB', 
-    imageSrc:`./images/firestorm.png`
+    projectName:'Videorealm',
+    projectDesc:'Videorealm is a video sharing application that allows users to upload, watch and comment on videos.',
+    projectLink:'https://videorealm.surge.sh/',
+    shortLink: 'videorealm.surge.sh',
+    projectTech:'Javascript, ES6, React, Redux, Node, MongoDB, Mongoose, Mocha, Chai',
+    imageSrc:`./images/videorealm.png`
   },
 ];
 export default projects;
