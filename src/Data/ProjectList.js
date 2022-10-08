@@ -19,9 +19,9 @@ const projects = [
   {
     projectName:'Videorealm',
     projectDesc:'Videorealm is a video sharing application that allows users to upload, watch and comment on videos.',
-    projectLink:'https://videorealm.herokuapp.com/',
-    shortLink: 'videorealm.herokuapp.com',
-    projectTech:'Javascript, ES6, React, Redux, Node, MongoDB, Mongoose, SendGrid, Mocha, Chai, AWS S3, Mlab',
+    projectLink:'https://videorealm.surge.sh/',
+    shortLink: 'videorealm.surge.sh',
+    projectTech:'Javascript, ES6, React, Redux, Node, MongoDB, Mongoose, Mocha, Chai',
     imageSrc:`./images/videorealm.png`
   },
   {
