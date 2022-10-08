@@ -14,7 +14,7 @@ const Project = () => {
         <p className="set-font proj-description">{project.projectDesc}</p>
         <p className="set-font">
           <b >Project Link: </b> 
-          <a href={project.imageSrc} target="_blank" rel="noopener noreferrer">
+          <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
           {project.shortLink}
           </a>
         </p>
