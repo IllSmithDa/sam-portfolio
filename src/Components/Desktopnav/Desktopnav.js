@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useInsertionEffect, useState } from 'react';
 import  './Desktopnav.css';
 
 export default function Desktopnav () {
@@ -25,6 +25,9 @@ export default function Desktopnav () {
     useEffect(() => {
         updateLinks(currentId);
     }, [currentId])
+    useEffect(() => {
+        updateLinks('home-tab');
+    }, [])
     useEffect(() => {
         document.addEventListener('scroll', () => {
             const appHeight = document.querySelector('.app-container').scrollHeight;
