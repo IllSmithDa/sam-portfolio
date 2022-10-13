@@ -1,17 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Homepage from "./Components/Homepage/Homepage";
 
 
 function App() {
   return (
-    <div>
     <Router>
-      <Switch>
-        <Route exact path="/" component={Homepage} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
     </Router>
-    </div>
   );
 }
 

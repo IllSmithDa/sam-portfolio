@@ -1,12 +1,12 @@
 import React from "react";
 import ProjectList from "../../Data/ProjectList";
-import UUID from 'uuid/v1';
+import { nanoid } from "nanoid";
 import "./Projects.css";
 
 const Project = () => {
   const listProjects = ProjectList.map((project) => {
     return (
-      <div key={UUID()} className="list-container">
+      <div key={nanoid()} className="list-container">
         <h3 className="set-font set-margin">{project.projectName}</h3>
         <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
          <img src={require(`${project.imageSrc}`)} alt="project-src" className="image-item"/>

@@ -7,7 +7,7 @@ export default function Mobilenav() {
 
   useEffect(() => {
     document.getElementById(currentId).style.textDecoration = 'underline';
-  }, [])
+  }, [currentId])
 
   const currentLink = (link, tab) => {
     // scroll into the selecte element
