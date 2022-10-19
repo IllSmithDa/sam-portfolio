@@ -1,9 +1,7 @@
 @font-face {
     font-family: bevan;
 }
-.nav-height {
-    height: 50px;
-}
+
 .sticky-nav {
     overflow: hidden; 
     position: fixed; /* Set the navbar to fixed position */
@@ -19,13 +17,14 @@
     flex-direction: column;
     align-items: center;
     height: 50px;
-
+    z-index: 999999;
 }
 .tab-container{
     display: flex;
     width: 1023px;
     margin: auto;
     justify-content: space-between;
+    z-index: 999999;
 }
 .tab-container span{
     font-family: Times, Arial, Helvetica, sans-serif;
